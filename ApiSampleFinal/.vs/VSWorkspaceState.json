@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Domain",
+    "\\Infrastructure",
+    "\\Services",
+    "\\Web",
+    "\\Web\\Controllers"
+  ],
+  "PreviewInSolutionExplorer": false
+}

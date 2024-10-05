@@ -1,0 +1,123 @@
+<div class="container">
+  <div class="header">
+    <p>
+      <mat-toolbar class="header-navigation" color="primary">
+
+        <div class="logo">
+          <img class="img-logo"
+            src="https://scontent.fclo8-1.fna.fbcdn.net/v/t39.30808-6/457474868_122094825464514277_6337982021611361056_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7yxk68vUgkAQ7kNvgGOgijQ&_nc_ht=scontent.fclo8-1.fna&oh=00_AYCbHyzd-0uEZuAX_wM4XbjSxxsmssrnq993c7bcVcfczg&oe=66D93C35"
+            alt="Logo">
+        </div>
+        <span class="example-spacer"></span>
+        <!-- Formulario de búsqueda -->
+        <form class="example-form" *ngIf="rol === 'Admin' || rol ==='Autor' || rol === 'Lector'">
+          <div class="form-container-search">
+            <mat-form-field class="example-full-width">
+              <input type="text" placeholder="Buscar usuario" aria-label="Search" matInput
+                [formControl]="controlCambios" [matAutocomplete]="auto" class="custom-input" />
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let user of filteredUsers | async" [value]="user.username">
+                  {{ user.username }}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div>
+        </form>
+
+        <span class="example-spacer"></span>
+
+        <button mat-icon-button *ngIf="rol === ''" class="example-icon" (click)="Login()" aria-label="Login">
+          <mat-icon>login</mat-icon>
+        </button>
+
+        <button mat-icon-button *ngIf="rol !== ''" class="example-icon" (click)="revisarPerfil('me')"
+          aria-label="Profile">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <button mat-icon-button *ngIf="rol !== ''" class="example-icon" (click)="Logout()" aria-label="Profile">
+          <mat-icon>exit_to_app</mat-icon>
+        </button>
+
+        <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button> -->
+      </mat-toolbar>
+    </p>
+  </div>
+
+  <!-- Publicar post -->
+
+  <div class="create-post-container" *ngIf="rol === 'Admin' || rol ==='Autor'">
+    <div class="post-options">
+      <button class="option-button" (click)="crearPost()">
+        Crear Publicación
+      </button>
+    </div>
+  </div>
+  
+
+<!-- Publicar post -->
+  <div class="body" *ngFor="let usuario of forMe">
+    <mat-card class="example-card">
+      <div class="revisarPerfil" (click)="revisarPerfil(usuario.userId)">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="user_name">{{usuario.username}}</mat-card-title>
+          <mat-card-subtitle class="user">{{usuario.user}}</mat-card-subtitle>
+        </mat-card-header>
+      </div>
+      <mat-card-content>
+        <h5 class="titulo">{{ usuario.title }}</h5>
+        <h6 class="contenido">{{ usuario.descripcion}}</h6>
+        <h6 class="publicacion">{{ usuario.pubDate}}</h6>
+        <mat-card-actions>
+          <div class="reacciones">
+            <button (click)="like(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor' || rol ==='Lector'" mat-button><mat-icon class="like">favorite</mat-icon></button>
+            <button (click)="comment(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor'" mat-button><mat-icon
+                class="comment"  *ngIf="rol ==='Autor'" >comment</mat-icon></button>
+             <button (click)="edit(usuario.postId)" *ngIf="rol === 'Admin' || (usuario.userId == permised && rol == 'Autor')" mat-button><mat-icon class="share">edit</mat-icon></button> 
+            <button (click)="delete(usuario.postId)" *ngIf="rol == 'Admin' || (usuario.userId == permised && logueado)" mat-button><mat-icon
+                class="delete">delete</mat-icon></button>
+          </div>
+        </mat-card-actions>
+      </mat-card-content>
+      <!-- <div class="imagen">
+        <img mat-card-image class="image" [src]="usuario.imageUrl" alt="Foto de {{ usuario.username }}">
+      </div> -->
+
+      <mat-card-actions *ngIf="comentario && postId_comentario == usuario.postId">
+        <!-- Contenedor para los comentarios existentes -->
+        <div class="comments-container">
+          <div class="comments-list" *ngFor="let comentario of comentarios">
+            <div class="comment-item">
+              <div class="comment-author">{{comentario.userName}}</div>
+              <div class="comment-text">{{comentario.content}}</div>
+              <div class="comment-date">{{comentario.pubDate}}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón para comentar -->
+        <button *ngIf="!comentarPostFlag" (click)="comentarPost()" mat-raised-button color="primary" type="button">
+          Comentar
+        </button>
+
+      </mat-card-actions>
+      <!-- Formulario para añadir un nuevo comentario -->
+      <form class="comment-form" *ngIf="comentarPostFlag && comentario && postId_comentario == usuario.postId">
+        <div class="comentario">
+          <mat-form-field class="ComentarioInput" appearance="fill">
+            <mat-label>Comentario</mat-label>
+            <textarea matInput [(ngModel)]="nuevoComentario" name="comentario" placeholder="Tu comentario"></textarea>
+          </mat-form-field>
+        </div>
+        <div class="guardarComentario">
+          <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Publicar
+            comentario</button>
+        </div>
+      </form>
+
+
+    </mat-card>
+  </div>
+</div>
