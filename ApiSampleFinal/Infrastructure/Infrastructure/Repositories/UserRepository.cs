@@ -50,7 +50,7 @@ namespace BlogsApps.Server.Repositories
 
         public async Task<bool> UserExistsAsync(Guid id)
         {
-            return await _context.Users.AnyAsync(e => e.Id == id);  // Comprobar si existe
+            return await _context.Users.AnyAsync(e => e.UserId == id);  // Comprobar si existe
         }
     }
 }

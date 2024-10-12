@@ -286,10 +286,13 @@ export class HomeComponent implements OnInit {
 
     console.log('Posts:', posts);
 
+    console.log('Users', usuarios)
+
+
     posts.forEach((post: any) => {
       usuarios.forEach((user: any) => {
+        console.log(post.userId, '==', this.userId)
         if (post.userId === user.userId) {
-
           this.forMe.push({
             userId: user.userId,
             postId: post.postId,
@@ -301,7 +304,9 @@ export class HomeComponent implements OnInit {
           });
         }
       });
-    });
+    }
+  
+  );
 
     const uniqueDescriptions = new Set(); 
     this.forMe = this.forMe.filter((item) => {

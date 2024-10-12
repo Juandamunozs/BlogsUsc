@@ -1,96 +1,114 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\",
+  "WorkspaceRootPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\models\\usermodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\usermodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\controllers\\milksalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\milksalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\imilkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\domain\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBF83616-5203-4809-9DC9-6E459F879376}|..\\Services\\Services\\Services.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\services\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\milkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\usermodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\usermodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\domain\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\domain\\domain\\likedpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\domain\\domain\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\domain\\domain\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\apisamplefinal.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:apisamplefinal.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\models\\modelsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\modelsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\modelsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBF83616-5203-4809-9DC9-6E459F879376}|..\\Services\\Services\\Services.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\services\\services\\imilkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBF83616-5203-4809-9DC9-6E459F879376}|..\\Services\\Services\\Services.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\services\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\models\\milkmodels\\milkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\imilkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\domain\\domain\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\postmodels\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\postmodels\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\controllers\\likedpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\likedpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\likepostmodels\\likepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\likepostmodels\\likepostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\likedpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\controllers\\milksalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\milksalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\models\\milkmodels\\milkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\milkmodels\\milkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\migrations\\20241001020440_001.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\migrations\\20241001015814_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\infrastructure\\infrastructure\\migrations\\20241005014011_002.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\domain\\domain\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\domain\\domain\\milk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBF83616-5203-4809-9DC9-6E459F879376}|..\\Services\\Services\\Services.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\services\\services\\milkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\apisamplefinal\\apisamplefinal\\web\\apisamplefinal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\camilo\\desktop\\proyecto\\blogsusc\\apisamplefinal\\web\\apisamplefinal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:apisamplefinal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -128,6 +146,57 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Milk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\MilkService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -147,197 +216,132 @@
         },
         {
           "DockedWidth": 215,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T18:56:24.129Z",
+              "WhenOpened": "2024-10-05T23:38:37.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Domain\\User.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Domain\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:47:40.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PostsController.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PostsController.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
-              "RelativeToolTip": "Controllers\\PostsController.cs",
+              "Title": "Blog.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Blog.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Domain\\Blog.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Blog.cs",
+              "RelativeToolTip": "..\\Domain\\Domain\\Blog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:33:19.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Services.csproj",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
-              "RelativeDocumentMoniker": "..\\Services\\Services\\Services.csproj",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
-              "RelativeToolTip": "..\\Services\\Services\\Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-05T19:07:01.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:40:00.549Z",
+              "WhenOpened": "2024-10-12T22:39:12.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IMilkRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Comment.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Domain\\Comment.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Comment.cs",
+              "RelativeToolTip": "..\\Domain\\Domain\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:27:31.193Z",
+              "WhenOpened": "2024-10-05T23:45:51.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "LikedPost.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\LikedPost.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Domain\\LikedPost.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\LikedPost.cs",
+              "RelativeToolTip": "..\\Domain\\Domain\\LikedPost.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T23:06:15.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Domain\\User.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "RelativeToolTip": "..\\Domain\\Domain\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:39:23.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Automapper\\MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Automapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Automapper\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Automapper\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Automapper\\MappingProfile.cs",
               "RelativeToolTip": "Automapper\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T21:42:51.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\UserModels\\UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\UserModels\\UserDTO.cs",
               "RelativeDocumentMoniker": "Models\\UserModels\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\UserModels\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\UserModels\\UserDTO.cs",
               "RelativeToolTip": "Models\\UserModels\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T19:18:53.719Z",
+              "WhenOpened": "2024-10-12T22:32:40.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MilkSalesController.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\MilkSalesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MilkSalesController.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Controllers\\MilkSalesController.cs",
-              "RelativeToolTip": "Controllers\\MilkSalesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAArAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PostsController.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "Controllers\\PostsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:47:09.251Z",
+              "WhenOpened": "2024-10-12T22:25:53.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:35:33.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "MilkRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:26:17.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:11:12.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:11:49.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:43:04.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:45:45.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -346,24 +350,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Class1.cs",
+              "DocumentIndex": 10,
+              "Title": "ApiSampleFinal.http",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\ApiSampleFinal.http",
+              "RelativeDocumentMoniker": "ApiSampleFinal.http",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\ApiSampleFinal.http",
+              "RelativeToolTip": "ApiSampleFinal.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T21:15:54.164Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-12T23:11:04.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
+              "Title": "Services",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "..\\Services\\Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "RelativeToolTip": "..\\Services\\Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-12T23:10:19.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T21:45:45.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T23:06:35.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:42:51.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ModelsDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\ModelsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\ModelsDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ModelsDbContext.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\ModelsDbContext.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\ModelsDbContext.cs",
               "RelativeToolTip": "Models\\ModelsDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -373,36 +429,309 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:11:28.833Z",
+              "WhenOpened": "2024-10-12T23:08:10.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LikedPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:24:00.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:21:26.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Post.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Domain\\Post.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Post.cs",
+              "RelativeToolTip": "..\\Domain\\Domain\\Post.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:40:45.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "IMilkService.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Services\\IMilkService.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
-              "RelativeToolTip": "..\\Services\\Services\\IMilkService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Title": "IMilkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:23:14.036Z",
+              "WhenOpened": "2024-10-05T23:36:21.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:42:45.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LikePostDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\LikePostModels\\LikePostDTO.cs",
+              "RelativeDocumentMoniker": "Models\\LikePostModels\\LikePostDTO.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\LikePostModels\\LikePostDTO.cs",
+              "RelativeToolTip": "Models\\LikePostModels\\LikePostDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:26:34.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:34:47.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T22:28:01.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PostDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\PostModels\\PostDTO.cs",
+              "RelativeDocumentMoniker": "Models\\PostModels\\PostDTO.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\PostModels\\PostDTO.cs",
+              "RelativeToolTip": "Models\\PostModels\\PostDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T00:20:43.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LikedPostsController.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LikedPostsController.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs",
+              "RelativeToolTip": "Controllers\\LikedPostsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:48:40.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\Blog.cs",
+              "RelativeDocumentMoniker": "Models\\Blog.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\Blog.cs",
+              "RelativeToolTip": "Models\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:42:19.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Services.csproj",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-05T19:07:01.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T20:40:00.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IMilkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T20:27:31.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T20:47:40.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MilkSalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\MilkSalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MilkSalesController.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\MilkSalesController.cs",
+              "RelativeToolTip": "Controllers\\MilkSalesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T21:47:09.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "MilkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:26:17.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:11:12.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:11:49.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T20:43:04.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T21:15:54.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:11:28.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IMilkService.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:23:14.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "MilkDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\MilkModels\\MilkDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\MilkModels\\MilkDTO.cs",
               "RelativeDocumentMoniker": "Models\\MilkModels\\MilkDTO.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\Models\\MilkModels\\MilkDTO.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\MilkModels\\MilkDTO.cs",
               "RelativeToolTip": "Models\\MilkModels\\MilkDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAcwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -410,227 +739,227 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 54,
               "Title": "20241001020440_001.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001020440_001.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:12:41.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 55,
               "Title": "20241001015814_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:12:24.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 56,
               "Title": "Milk.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Domain\\Milk.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
-              "RelativeToolTip": "..\\Domain\\Domain\\Milk.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:13:09.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 57,
               "Title": "20241005014011_002.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241005014011_002.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAACAAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:40:11.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 58,
               "Title": "Cow.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Domain\\Cow.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
-              "RelativeToolTip": "..\\Domain\\Domain\\Cow.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:13:00.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 59,
               "Title": "MilkService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Services\\MilkService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
-              "RelativeToolTip": "..\\Services\\Services\\MilkService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\ApiSampleFinal\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T01:23:17.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAABMAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T22:01:23.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\AppDbContext.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:27:25.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Cow.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Cow.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T02:00:13.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "20241001015814_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Migrations\\20241001015814_InitialCreate.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAAB0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T01:58:15.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "Milk.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Domain\\Domain\\Milk.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:24:14.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "MilkRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\MilkRepository.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAgwBsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:08:34.261Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "IMilkRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IMilkRepository.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAEwAsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:07:56.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "MilkService.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\MilkService.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAABMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T21:59:46.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "IMilkService.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\IMilkService.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAWwAwAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T01:41:32.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\BaseRepository.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAwwBcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T01:16:32.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-09-30T22:01:04.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Dependencyinjection.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\source\\repos\\ApiSampleFinal\\Services\\Services\\Dependencyinjection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T22:00:22.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "ApiSampleFinal.csproj",
-              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\ApiSampleFinal.csproj",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\ApiSampleFinal.csproj",
               "RelativeDocumentMoniker": "ApiSampleFinal.csproj",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\ApiSampleFinal\\ApiSampleFinal\\Web\\ApiSampleFinal.csproj",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Web\\ApiSampleFinal.csproj",
               "RelativeToolTip": "ApiSampleFinal.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

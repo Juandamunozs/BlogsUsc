@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
+    "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Camilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -66,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.7.24407.12/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Camilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj"
+              "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj"
               }
             }
           }
@@ -113,9 +112,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -123,21 +121,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -156,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.7.24407.12/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

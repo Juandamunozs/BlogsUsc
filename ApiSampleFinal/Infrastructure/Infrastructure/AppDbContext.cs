@@ -18,7 +18,7 @@ namespace Infrastructure
          public DbSet<Cow> Cows { get; set; }
         public DbSet<Blog> Blogs  { get; set;  }
         public DbSet<Comment> Coments { get; set; }
-        public DbSet<LikedPost> LikedPosts { get; set; }
+        public DbSet<LikedPost> LikedPosts{ get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<User> Users { get; set; }
 

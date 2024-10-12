@@ -1,107 +1,84 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using ApiSampleFinal.Models.LikePostModels;
+using AutoMapper;
 using BlogsApps.Server.Models;
+using BlogsApps.Server.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BlogsApps.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LikedPostsController : ControllerBase
+    public class LikePostsController : ControllerBase
     {
-        private readonly ModelsDbContext _context;
+        private readonly ILikedPostRepository _likePostRepository;
+        private readonly IMapper _mapper;
 
-        public LikedPostsController(ModelsDbContext context)
+        public LikePostsController(ILikedPostRepository likePostRepository, IMapper mapper)
         {
-            _context = context;
+            _likePostRepository = likePostRepository;
+            _mapper = mapper;
         }
 
-        // GET: api/LikedPosts
+        // GET: api/LikePosts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<LikedPost>>> GetLikedPosts()
+        public async Task<ActionResult<IEnumerable<LikePostDTO>>> GetLikePosts()
         {
-            return await _context.LikedPosts.ToListAsync();
+            var likePosts = await _likePostRepository.GetAllLikePostsAsync();
+            var likePostsDTO = _mapper.Map<IEnumerable<LikePostDTO>>(likePosts);
+            return Ok(likePostsDTO);
         }
 
-        // GET: api/LikedPosts/5
+        // GET: api/LikePosts/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<LikedPost>> GetLikedPosts(int id)
+        public async Task<ActionResult<LikePostDTO>> GetLikePost(Guid id)
         {
-            var likedPosts = await _context.LikedPosts.FindAsync(id);
-
-            if (likedPosts == null)
+            var likePost = await _likePostRepository.GetLikePostByIdAsync(id);
+            if (likePost == null)
             {
                 return NotFound();
             }
-
-            return likedPosts;
+            var likePostDTO = _mapper.Map<LikePostDTO>(likePost);
+            return Ok(likePostDTO);
         }
 
-        // PUT: api/LikedPosts/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/LikePosts/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutLikedPosts(Guid id, LikedPost likedPosts)
+        public async Task<IActionResult> PutLikePost(Guid id, LikePostDTO likePostDTO)
         {
-            if (id != likedPosts.Id)
+            if (id != likePostDTO.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(likedPosts).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!LikedPostsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var likePost = _mapper.Map<LikedPost>(likePostDTO);
+            await _likePostRepository.UpdateLikePostAsync(likePost);
 
             return NoContent();
         }
 
-        // POST: api/LikedPosts
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/LikePosts
         [HttpPost]
-        public async Task<ActionResult<LikedPost>> PostLikedPosts(LikedPost likedPosts)
+        public async Task<ActionResult<LikePostDTO>> PostLikePost(LikePostDTO likePostDTO)
         {
-            _context.LikedPosts.Add(likedPosts);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetLikedPosts", new { id = likedPosts.Id }, likedPosts);
+            var likePost = _mapper.Map<LikedPost>(likePostDTO);
+            await _likePostRepository.AddLikePostAsync(likePost);
+            return CreatedAtAction(nameof(GetLikePost), new { id = likePost.Id }, _mapper.Map<LikePostDTO>(likePost));
         }
 
-        // DELETE: api/LikedPosts/5
+        // DELETE: api/LikePosts/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteLikedPosts(int id)
+        public async Task<IActionResult> DeleteLikePost(Guid id)
         {
-            var likedPosts = await _context.LikedPosts.FindAsync(id);
-            if (likedPosts == null)
+            if (!await _likePostRepository.LikePostExistsAsync(id))
             {
                 return NotFound();
             }
 
-            _context.LikedPosts.Remove(likedPosts);
-            await _context.SaveChangesAsync();
-
+            await _likePostRepository.DeleteLikePostAsync(id);
             return NoContent();
-        }
-
-        private bool LikedPostsExists(Guid id)
-        {
-            return _context.LikedPosts.Any(e => e.Id == id);
         }
     }
 }

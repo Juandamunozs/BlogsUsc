@@ -47,7 +47,7 @@ namespace BlogsApps.Server.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(Guid id, UserDTO userDTO)
         {
-            if (id != userDTO.Id)
+            if (id != userDTO.UserId)
             {
                 return BadRequest();
             }
@@ -64,7 +64,7 @@ namespace BlogsApps.Server.Controllers
         {
             var user = _mapper.Map<User>(userDTO);
             await _userRepository.AddUserAsync(user);
-            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, _mapper.Map<UserDTO>(user));
+            return CreatedAtAction(nameof(GetUser), new { id = user.UserId }, _mapper.Map<UserDTO>(user));
         }
 
         // DELETE: api/Users/{id}

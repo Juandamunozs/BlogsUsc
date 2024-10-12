@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using ApiSampleFinal.Models.CommentModels; // Asegúrate de tener este espacio de nombres para los DTOs de comentario
+using AutoMapper;
 using BlogsApps.Server.Models;
+using BlogsApps.Server.Repositories; // Asegúrate de que existe un repositorio para los comentarios
+using Microsoft.AspNetCore.Mvc;
 
 namespace BlogsApps.Server.Controllers
 {
@@ -13,95 +13,72 @@ namespace BlogsApps.Server.Controllers
     [ApiController]
     public class CommentsController : ControllerBase
     {
-        private readonly ModelsDbContext _context;
+        private readonly ICommentRepository _commentRepository; // Asegúrate de tener un repositorio de comentarios
+        private readonly IMapper _mapper;
 
-        public CommentsController(ModelsDbContext context)
+        public CommentsController(ICommentRepository commentRepository, IMapper mapper)
         {
-            _context = context;
+            _commentRepository = commentRepository;
+            _mapper = mapper;
         }
 
         // GET: api/Comments
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
+        public async Task<ActionResult<IEnumerable<CommentDTO>>> GetComments()
         {
-            return await _context.Comments.ToListAsync();
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var commentsDTO = _mapper.Map<IEnumerable<CommentDTO>>(comments);
+            return Ok(commentsDTO);
         }
 
-        // GET: api/Comments/5
+        // GET: api/Comments/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Comment>> GetComments(Guid id)
+        public async Task<ActionResult<CommentDTO>> GetComment(Guid id)
         {
-            var comments = await _context.Comments.FindAsync(id);
-
-            if (comments == null)
+            var comment = await _commentRepository.GetCommentByIdAsync(id);
+            if (comment == null)
             {
                 return NotFound();
             }
-
-            return comments;
+            var commentDTO = _mapper.Map<CommentDTO>(comment);
+            return Ok(commentDTO);
         }
 
-        // PUT: api/Comments/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Comments/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutComments(Guid id, Comment comment)
+        public async Task<IActionResult> PutComment(Guid id, CommentDTO commentDTO)
         {
-            if (id != comment.Id)
+            if (id != commentDTO.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(comment).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CommentsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var comment = _mapper.Map<Comment>(commentDTO);
+            await _commentRepository.UpdateCommentAsync(comment);
 
             return NoContent();
         }
 
         // POST: api/Comments
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Comment>> PostComments(Comment comments)
+        public async Task<ActionResult<CommentDTO>> PostComment(CommentDTO commentDTO)
         {
-            _context.Comments.Add(comments);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetComments", new { id = comments.Id }, comments);
+            var comment = _mapper.Map<Comment>(commentDTO);
+            await _commentRepository.AddCommentAsync(comment);
+            return CreatedAtAction(nameof(GetComment), new { id = comment.Id }, _mapper.Map<CommentDTO>(comment));
         }
 
-        // DELETE: api/Comments/5
+        // DELETE: api/Comments/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteComments(int id)
+        public async Task<IActionResult> DeleteComment(Guid id)
         {
-            var comments = await _context.Comments.FindAsync(id);
-            if (comments == null)
+            if (!await _commentRepository.CommentExistsAsync(id))
             {
                 return NotFound();
             }
 
-            _context.Comments.Remove(comments);
-            await _context.SaveChangesAsync();
-
+            await _commentRepository.DeleteCommentAsync(id);
             return NoContent();
-        }
-
-        private bool CommentsExists(Guid id)
-        {
-            return _context.Comments.Any(e => e.Id == id);
         }
     }
 }

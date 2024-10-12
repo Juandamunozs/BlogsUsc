@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using ApiSampleFinal.Models.PostModels;
 using BlogsApps.Server.Models;
+using BlogsApps.Server.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BlogsApps.Server.Controllers
 {
@@ -13,95 +13,72 @@ namespace BlogsApps.Server.Controllers
     [ApiController]
     public class PostsController : ControllerBase
     {
-        private readonly ModelsDbContext _context;
+        private readonly IPostRepository _postRepository;
+        private readonly IMapper _mapper;
 
-        public PostsController(ModelsDbContext context)
+        public PostsController(IPostRepository postRepository, IMapper mapper)
         {
-            _context = context;
+            _postRepository = postRepository;
+            _mapper = mapper;
         }
 
         // GET: api/Posts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
+        public async Task<ActionResult<IEnumerable<PostDTO>>> GetPosts()
         {
-            return await _context.Posts.ToListAsync();
+            var posts = await _postRepository.GetAllPostsAsync();
+            var postsDTO = _mapper.Map<IEnumerable<PostDTO>>(posts);
+            return Ok(postsDTO);
         }
 
-        // GET: api/Posts/5
+        // GET: api/Posts/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Post>> GetPosts(int id)
+        public async Task<ActionResult<PostDTO>> GetPost(Guid id)
         {
-            var posts = await _context.Posts.FindAsync(id);
-
-            if (posts == null)
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
             {
                 return NotFound();
             }
-
-            return posts;
+            var postDTO = _mapper.Map<PostDTO>(post);
+            return Ok(postDTO);
         }
 
-        // PUT: api/Posts/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Posts/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPosts(Guid id, Post posts)
+        public async Task<IActionResult> PutPost(Guid id, PostDTO postDTO)
         {
-            if (id != posts.Id)
+            if (id != postDTO.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(posts).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PostsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var post = _mapper.Map<Post>(postDTO);
+            await _postRepository.UpdatePostAsync(post);
 
             return NoContent();
         }
 
         // POST: api/Posts
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Post>> PostPosts(Post posts)
+        public async Task<ActionResult<PostDTO>> PostPost(PostDTO postDTO)
         {
-            _context.Posts.Add(posts);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetPosts", new { id = posts.Id }, posts);
+            var post = _mapper.Map<Post>(postDTO);
+            await _postRepository.AddPostAsync(post);
+            return CreatedAtAction(nameof(GetPost), new { id = post.Id }, _mapper.Map<PostDTO>(post));
         }
 
-        // DELETE: api/Posts/5
+        // DELETE: api/Posts/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePosts(int id)
+        public async Task<IActionResult> DeletePost(Guid id)
         {
-            var posts = await _context.Posts.FindAsync(id);
-            if (posts == null)
+            if (!await _postRepository.PostExistsAsync(id))
             {
                 return NotFound();
             }
 
-            _context.Posts.Remove(posts);
-            await _context.SaveChangesAsync();
-
+            await _postRepository.DeletePostAsync(id);
             return NoContent();
-        }
-
-        private bool PostsExists(Guid id)
-        {
-            return _context.Posts.Any(e => e.Id == id);
         }
     }
 }

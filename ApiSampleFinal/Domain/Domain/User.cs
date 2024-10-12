@@ -5,23 +5,24 @@ namespace BlogsApps.Server.Models
 {
     public class User
     {
-        //ID
+        // ID
         [Key]
-        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
 
-        //Name
+        // Name
         [Column(TypeName = "nvarchar(100)")]
         public required string Name { get; set; }
 
-        //Email
+        // Email
+        [EmailAddress]
         [Column(TypeName = "nvarchar(100)")]
         public required string Email { get; set; }
 
-        //Password
+        // Password
         [Column(TypeName = "nvarchar(100)")]
         public required string Password { get; set; }
 
-        //ROLE
+        // Role
         [Column(TypeName = "nvarchar(100)")]
         public required string Role { get; set; }
     }

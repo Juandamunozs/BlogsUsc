@@ -5,36 +5,40 @@ namespace BlogsApps.Server.Models
 {
     public class Post
     {
-        //ID
+        // ID
         [Key]
         public Guid Id { get; set; }
-        public int Rating {  get; set; }
 
-        //Title
+        // Rating
+        public int Rating { get; set; }
+
+        // Title
         [Column(TypeName = "nvarchar(100)")]
         public required string Title { get; set; }
 
-        //Content
+        // Content
         [Column(TypeName = "nvarchar(1200)")]
         public required string Content { get; set; }
 
-        //Author is user ID
-        public User? User { get; set; }
+        // Author is User ID (foreign key)
+        public Guid UserId { get; set; }  // Clave foránea para User
+        public User? User { get; set; }   // Relación con User
 
-
-        //Status
+        // Status
         [Column(TypeName = "nvarchar(100)")]
         public required string Status { get; set; }
 
-        //PubDate
-       
+        // PubDate
         public required DateTime PubDate { get; set; }
 
-        public Guid BlogId { get; set; }
+        // Blog relationship
+        public Guid BlogId { get; set; }  // Clave foránea para Blog
         public Blog Blog { get; set; }
 
+        // List of Comments
         public IList<Comment> Comments { get; set; } = new List<Comment>();
-        public IList<LikedPost> LikedPosts { get; set; } = new List<LikedPost>();
 
+        // List of Likes (LikedPosts)
+        public IList<LikedPost> LikedPosts { get; set; } = new List<LikedPost>();
     }
 }

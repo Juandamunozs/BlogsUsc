@@ -9,3 +9,15 @@ C:\Users\Camilo\Desktop\ApiSampleFinal\ApiSampleFinal\Domain\Domain\obj\Debug\ne
 C:\Users\Camilo\Desktop\ApiSampleFinal\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Camilo\Desktop\ApiSampleFinal\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Camilo\Desktop\ApiSampleFinal\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Camilo\Desktop\Proyecto\BlogsUsc\ApiSampleFinal\Domain\Domain\obj\Debug\net8.0\ref\Domain.dll

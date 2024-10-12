@@ -24,6 +24,8 @@ export class PostDialogComponent implements OnInit {
 
   ngOnInit() {
     this.userId = localStorage.getItem('userId') || '';
+
+    console.log(this.userId)
     
     if (this.data. message && this.data. message !== 'Crear Post') {
       this.loadPostData(this.data. message);

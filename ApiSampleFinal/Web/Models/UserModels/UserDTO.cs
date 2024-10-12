@@ -2,7 +2,7 @@
 {
     public class UserDTO
     {
-        public Guid Id { get; set; }  // El identificador del usuario
+        public Guid UserId { get; set; }  // El identificador del usuario
 
         public string Name { get; set; }  // Nombre completo del usuario
 

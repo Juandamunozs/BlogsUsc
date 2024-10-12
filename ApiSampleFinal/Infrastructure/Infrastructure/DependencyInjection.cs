@@ -14,7 +14,10 @@ namespace Infrastructure
 
             // Aquí van los repositorios
             services.AddScoped<IMilkRepository, MilkRepository>();
-            services.AddScoped<IUserRepository, UserRepository>(); // Agregado el registro para UserRepository
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ICommentRepository, CommentRepository>();// Agregado el registro para UserRepository
+            services.AddScoped<ILikedPostRepository, LikedPostRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
 
             services.AddDbContext<AppDbContext>(options =>
             {
