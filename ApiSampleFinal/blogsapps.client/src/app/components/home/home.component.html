@@ -74,7 +74,7 @@
           <div class="reacciones">
             <button (click)="like(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor' || rol ==='Lector'" mat-button><mat-icon class="like">favorite</mat-icon></button>
             <button (click)="comment(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor'" mat-button><mat-icon
-                class="comment"  *ngIf="rol ==='Autor'" >comment</mat-icon></button>
+                class="comment" >comment</mat-icon></button>
              <button (click)="edit(usuario.postId)" *ngIf="rol === 'Admin' || (usuario.userId == permised && rol == 'Autor')" mat-button><mat-icon class="share">edit</mat-icon></button> 
             <button (click)="delete(usuario.postId)" *ngIf="rol == 'Admin' || (usuario.userId == permised && logueado)" mat-button><mat-icon
                 class="delete">delete</mat-icon></button>

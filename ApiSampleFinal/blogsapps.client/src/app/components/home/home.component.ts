@@ -164,13 +164,17 @@ export class HomeComponent implements OnInit {
     if (this.comentario) {
         this.postId_comentario = postId;
 
+        // console.log('Vamos a comentar el post:', postId);
+
         this.comentarios = [];
         localStorage.setItem('postId', postId);
 
         this.homeService.comentarios().subscribe(
             (Response: any) => {
+              // console.log('Respuesta del servidor:', Response);
                 Response.forEach((comentario: any) => {
                     this.usuarios.forEach((user: any) => {
+                      // console.log(comentario.postId, '==', postId, '&&', comentario.userId, '==', user.userId);
                         if (comentario.postId == postId && comentario.userId == user.userId) {
                             this.comentarios.push({
                                 ...comentario,
@@ -295,7 +299,7 @@ export class HomeComponent implements OnInit {
         if (post.userId === user.userId) {
           this.forMe.push({
             userId: user.userId,
-            postId: post.postId,
+            postId: post.id,
             username: user.name,
             user: user.email,
             descripcion: post.content,

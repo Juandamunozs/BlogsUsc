@@ -48,7 +48,7 @@ export class HomeService {
         console.log('Objeto de usuario a likear: ', objLogin);
 
         // Enviar la solicitud POST
-        return this.http.post<any>(`${this.API}LikedPosts`, objLogin);
+        return this.http.post<any>(`${this.API}LikePosts`, objLogin);
 
 
     }
@@ -57,7 +57,7 @@ export class HomeService {
 
         const objLogin = { userId: userId, postId: postId};
 
-        console.log('Objeto de usuario a eliminar: ', objLogin);
+        console.log('Objeto de post a eliminar: ', `${this.API}Posts/${postId}`);
 
         // Enviar la solicitud POST
         return this.http.delete<any>(`${this.API}Posts/${postId}`);

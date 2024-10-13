@@ -51,7 +51,6 @@ export class LoginComponent {
         Response.forEach((usuario: { email: any; password: any; role: any; name: any, userId: any}) => {
 
           if (usuario.email === this.form.value.email && usuario.password === this.form.value.contraseña) {
-            console.log('Usuario logueado:', usuario);
 
            localStorage.setItem('rol', usuario.role);
            localStorage.setItem('user', usuario.email);

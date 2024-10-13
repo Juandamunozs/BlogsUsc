@@ -4057,23 +4057,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Camilo\\.nuget\\packages\\": {},
+    "C:\\Users\\juand\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Camilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4089,8 +4089,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Camilo\\Desktop\\Proyecto\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj"
+            "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Domain.csproj"
             }
           }
         }
@@ -4103,8 +4103,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4145,8 +4146,60 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Azure.Identity\" 1.10.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "libraryId": "Azure.Identity",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Azure.Identity\" 1.10.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
+      "libraryId": "Azure.Identity",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Identity.Client\" 4.56.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Identity.Client\" 4.56.0 tiene una vulnerabilidad de gravedad baja conocida, https://github.com/advisories/GHSA-x674-v45j-fwxw",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Formats.Asn1\" 5.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-447r-wph3-92pm",
+      "libraryId": "System.Formats.Asn1",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

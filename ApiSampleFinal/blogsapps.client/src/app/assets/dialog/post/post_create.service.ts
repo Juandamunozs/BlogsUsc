@@ -17,7 +17,7 @@ export class postService {
     public crearPost(userId: string, title: string, content: string){
         const pubDate = this.getDate();
 
-        const objLogin = { UserId: userId, Title: title, Content: content, PubDate: pubDate, status: 'Publicado'};
+        const objLogin = { UserId: userId, Title: title, Content: content, PubDate: pubDate, status: 'Publicado', rating: '5', blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"};
 
         console.log('Objeto de usuario a comentar: ', objLogin);
 
@@ -39,15 +39,29 @@ export class postService {
         return this.http.get(`${this.API}Posts/${postId}`);
     }
 
-    public actualizarPost(postId: string, title: string, content: string){
+    public actualizarPost(postId: string, title: string, content: string) {
 
-       const userId = localStorage.getItem('userId') || '';
+        // Obtener el UserId desde localStorage
+        const userId = localStorage.getItem('userId') || '';
+    
+        // Obtener la fecha actual
         const pubDate = this.getDate();
-
-        const objLogin = {UserId:userId ,Title: title, Content: content, PubDate: pubDate, status: 'Publicado', PostId: postId};
-
+    
+        // Construir el objeto con los datos para actualizar el post
+        const objLogin = {
+            userId: userId,
+            title: title,
+            content: content,
+            pubDate: pubDate,
+            status: 'Publicado',
+            id: postId,
+            rating: '5',  
+            blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"  
+        };
+    
         console.log('Objeto de usuario a comentar: ', objLogin);
-
+    
+        // Realizar la solicitud HTTP PUT para actualizar el post
         return this.http.put(`${this.API}Posts/${postId}`, objLogin);
     }
 

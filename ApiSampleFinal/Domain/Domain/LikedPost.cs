@@ -9,11 +9,12 @@ namespace BlogsApps.Server.Models
         [Key]
         public Guid Id { get; set; }
 
-        //Author is user ID
-        public User? User { get; set; }
+		//Author is user ID
+		public Guid UserId { get; set; }
+		public User? Users { get; set; }
 
-        //Post ID
-        public Guid? PostId { get; set; }
+		//Post ID
+		public Guid? PostId { get; set; }
         public Post? Post { get; set; }
     }
 }
