@@ -1,6 +1,8 @@
 <!-- Redirigir a home -->
 <div class="home-container">
-  <button (click)="home()" mat-button><mat-icon class="home">home</mat-icon></button>
+  <button (click)="home()" mat-button>
+    <mat-icon class="home">home</mat-icon>
+  </button>
 </div>
 
 <!-- perfil-usuario.component.html -->
@@ -23,8 +25,7 @@
 
           <mat-form-field appearance="fill">
             <mat-label>Descripción</mat-label>
-            <textarea matInput id="descripcion" [(ngModel)]="usuarioPerfil.descripcion" name="descripcion"
-              required></textarea>
+            <textarea matInput id="descripcion" [(ngModel)]="usuarioPerfil.descripcion" name="descripcion" required></textarea>
           </mat-form-field>
 
           <button mat-raised-button color="primary" type="submit">Guardar Cambios</button>
@@ -36,17 +37,10 @@
       <ng-template #viewMode>
         <div class="perfil-info-view">
           <h1 class="perfil-usuario">{{ usuarioPerfil.name }}</h1>
-          <h2 class="perfil-nombre"> &#64;{{ usuarioPerfil.email }}</h2>
+          <h2 class="perfil-nombre">&#64;{{ usuarioPerfil.email }}</h2>
           <p class="perfil-bio">{{ usuarioPerfil.descripcion }}</p>
           <div class="perfil-actions">
-            <button *ngIf="user !== ''" mat-raised-button color="primary" (click)="activarEdicion()">Editar
-              Perfil</button>
-            <button mat-raised-button color="primary" (click)="follow()">Seguir</button>
             <button mat-raised-button color="primary" (click)="edit()">Editar Perfil</button>
-            <button mat-raised-button color="primary" (click)="unfollow()">Dejar de seguir</button>
-            <button mat-raised-button color="primary" (click)="block()">Bloquear</button>
-            <button mat-raised-button color="primary" (click)="unlock()">Desbloquear</button>
-
           </div>
         </div>
       </ng-template>
@@ -54,17 +48,17 @@
   </div>
 </div>
 
-  <!-- Publicar post -->
-
-  <div class="create-post-container" *ngIf="rol === 'Admin' || rol ==='Autor'">
-    <div class="post-options">
-      <button class="option-button" (click)="crearPost()">
-        Crear Publicación
-      </button>
-    </div>
+<!-- Crear Publicación -->
+<div class="create-post-container" *ngIf="rol === 'Admin' || rol === 'Autor'">
+  <div class="post-options">
+    <button class="option-button" (click)="crearPost()">
+      Crear Publicación
+    </button>
   </div>
-  <br>
+</div>
+<br>
 
+<!-- Posts del Usuario -->
 <div class="body" *ngFor="let post of postUsuarioRenderizar">
   <mat-card class="example-card">
     <mat-card-header>
@@ -74,54 +68,60 @@
     </mat-card-header>
     <mat-card-content>
       <h5 class="titulo">{{ post.title }}</h5>
-      <h6 class="contenido">{{ post.content}}</h6>
-      <h6 class="publicacion">{{ post.pubDate}}</h6>
+      <h6 class="contenido">{{ post.content }}</h6>
+      <h6 class="publicacion">{{ post.pubDate }}</h6>
     </mat-card-content>
-    <!-- <div class="imagen">
-      <img mat-card-image class="image" [src]="usuarioPerfil.imageUrl" alt="Foto de {{ usuarioPerfil.username }}">
-    </div> -->
     <mat-card-actions>
       <div class="reacciones">
-        <button (click)="like(post.postId)" mat-button><mat-icon class="like">thumb_up</mat-icon></button>
-        <button (click)="comment(post.postId)" *ngIf="rol === 'Admin' || (rol ==='Autor' && post.userId==permised)" mat-button><mat-icon
-            class="comment">comment</mat-icon></button>
-            <button (click)="editPost(post.postId)" *ngIf="rol === 'Admin' || (post.userId == permised && rol == 'Autor')" mat-button><mat-icon class="share">edit</mat-icon></button> 
-        <!-- <button (click)="share()" mat-button><mat-icon class="share">share</mat-icon></button> -->
-        <button (click)="delete(post.postId)" *ngIf="rol === 'Admin' || (post.userId==permised && permisedUser)" mat-button><mat-icon
-            class="delete">delete</mat-icon></button>
+        <div class="like" *ngIf="post.liked == true">
+          <button (click)="dislike(post.likeId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
+            mat-button [ngStyle]="{'background-color': 'white', 'color': 'red'}">
+            <mat-icon class="like">favorite</mat-icon>
+          </button>
+        </div>
+
+        <div class="dislike" *ngIf="post.liked == false">
+          <button (click)="like(post.id)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
+            mat-button>
+            <mat-icon class="like">favorite</mat-icon>
+          </button>
+        </div>
+
+        <button (click)="viewLikes(post.id)" *ngIf="rol === 'Admin' || rol === 'Autor'" mat-button>
+          <mat-icon class="comment">stars</mat-icon>
+        </button>
+
+        <button (click)="comment(post.id)" *ngIf="rol === 'Admin' || (rol === 'Autor' && post.userId == permised)" mat-button>
+          <mat-icon class="comment">comment</mat-icon>
+        </button>
+        <button (click)="editPost(post.id)" *ngIf="rol === 'Admin' || (post.userId == permised && rol == 'Autor')" mat-button>
+          <mat-icon class="share">edit</mat-icon>
+        </button>
+        <button (click)="delete(post.postId)" *ngIf="rol === 'Admin' || (post.userId == permised && permisedUser)" mat-button>
+          <mat-icon class="delete">delete</mat-icon>
+        </button>
       </div>
     </mat-card-actions>
 
-    <mat-card-actions *ngIf="comentario && postId_comentario == post.postId">
-      <!-- Contenedor para los comentarios existentes -->
-      <div class="comments-container"> 
+    <!-- Sección de Comentarios -->
+    <mat-card-actions *ngIf="comentarPostFlag && comentario && postId_comentario == post.id">
+      <div class="guardarComentario">
+        <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Añadir comentario</button>
+      </div>
+      <div class="comments-container">
         <div class="comments-list" *ngFor="let comentario of comentarios">
           <div class="comment-item">
-            <div class="comment-author">{{comentario.userName}}</div>
-            <div class="comment-text">{{comentario.content}}</div>
-            <div class="comment-date">{{comentario.pubDate}}</div>
+            <div class="comment-author">{{ comentario.userName }}</div>
+            <div class="comment-text">{{ comentario.content }}</div>
+            <button (click)="deleteComentario(comentario.id)" mat-button>
+              <mat-icon class="delete">delete</mat-icon>
+            </button>
+            <button (click)="commentEdit(comentario.content, comentario.id, post.postId, comentario.pubDate, usuarioPerfil.userId)" mat-button>
+              <mat-icon class="edit">edit</mat-icon>
+            </button>
           </div>
         </div>
       </div>
-
-      <!-- Botón para comentar -->
-      <button *ngIf="!comentarPostFlag" (click)="comentarPost()" mat-raised-button color="primary" type="button">
-        Comentar
-      </button>
-
     </mat-card-actions>
-    <!-- Formulario para añadir un nuevo comentario -->
-    <form class="comment-form" *ngIf="comentarPostFlag && comentario && postId_comentario == post.postId">
-      <div class="comentario">
-        <mat-form-field class="ComentarioInput" appearance="fill">
-          <mat-label>Comentario</mat-label>
-          <textarea matInput [(ngModel)]="nuevoComentario" name="comentario" placeholder="Tu comentario"></textarea>
-        </mat-form-field>
-      </div>
-      <div class="guardarComentario">
-        <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Publicar
-          comentario</button>
-      </div>
-    </form>
   </mat-card>
 </div>

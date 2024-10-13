@@ -87,8 +87,12 @@
               </button>
             </div>
 
+            <button (click)="viewLikes(usuario.postId)" *ngIf="rol === 'Admin' || rol === 'Autor'" mat-button>
+              <mat-icon class="comment">stars</mat-icon>
+            </button>
+
             <button (click)="comment(usuario.postId)" *ngIf="rol === 'Admin' || rol === 'Autor'" mat-button>
-              <mat-icon class="comment">comment</mat-icon>
+              <mat-icon class="comment">question_answer</mat-icon>
             </button>
 
             <button (click)="edit(usuario.postId)"
@@ -106,24 +110,34 @@
 
       <!-- Sección de comentarios -->
       <mat-card-actions *ngIf="comentario && postId_comentario == usuario.postId">
+        <div class="guardarComentario">
+          <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Añadir
+            comentario</button>
+        </div>
         <div class="comments-container">
           <div class="comments-list" *ngFor="let comentario of comentarios">
             <div class="comment-item">
               <div class="comment-author">{{ comentario.userName }}</div>
               <div class="comment-text">{{ comentario.content }}</div>
-              <div class="comment-date">{{ comentario.pubDate }}</div>
+              <!-- <div class="comment-date">{{ comentario.pubDate }}</div> -->
+              <button (click)="deleteComentario(comentario.id)"
+              mat-button>
+              <mat-icon class="delete">delete</mat-icon>
+            </button>
+            
+            <button (click)="commentEdit(comentario.content, comentario.id, usuario.postId, comentario.pubDate, usuario.userId)"
+              mat-button>
+              <mat-icon class="delete">edit</mat-icon>
+          </button>
             </div>
           </div>
         </div>
 
-        <button *ngIf="!comentarPostFlag" (click)="comentarPost()" mat-raised-button color="primary" type="button">
-          Comentar
-        </button>
       </mat-card-actions>
 
       <!-- Formulario para añadir un nuevo comentario -->
       <form class="comment-form" *ngIf="comentarPostFlag && comentario && postId_comentario == usuario.postId">
-        <div class="comentario">
+        <!-- <div class="comentario">
           <mat-form-field class="ComentarioInput" appearance="fill">
             <mat-label>Comentario</mat-label>
             <textarea matInput [(ngModel)]="nuevoComentario" name="comentario" placeholder="Tu comentario"></textarea>
@@ -132,7 +146,7 @@
         <div class="guardarComentario">
           <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Publicar
             comentario</button>
-        </div>
+        </div> -->
       </form>
     </mat-card>
   </div>

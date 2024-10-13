@@ -1,0 +1,79 @@
+/* Contenedor principal */
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo del título */
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+/* Contenedor de likes */
+.likes-container {
+  max-height: 300px; 
+  overflow-y: auto; 
+  margin-bottom: 20px;
+}
+
+/* Estilo de cada like */
+.like {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0; 
+  display: flex; 
+  align-items: center; 
+}
+
+
+.like-info {
+  flex: 1; 
+}
+
+/* Contenedor de información del like */
+.like-info-container {
+  display: flex;
+  align-items: center; 
+}
+
+/* Estilo del ícono de corazón */
+.heart-icon {
+  color: #ff4081; 
+  margin-right: 8px; 
+  font-size: 20px; 
+}
+
+/* Estilo del nombre de usuario */
+.like-info-username {
+  font-size: 16px; 
+  color: #007BFF;
+}
+
+
+/* Estilos para el botón en general */
+.mat-dialog-actions {
+  padding-top: 10px; 
+}
+
+.cancelar {
+  background-color: #f44336; /* Color de fondo rojo */
+  color: white; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  transition: background-color 0.3s; 
+  border: none; 
+  justify-content: center; 
+margin-left: 30%;
+}
+
+.cancelar:hover {
+  background-color: #d32f2f; 
+}

@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="titulo" mat-dialog-title>Que opinas post...</h1>
+  
+    <div mat-dialog-content>
+      <form [formGroup]="form" class="form">
+        
+        <mat-form-field appearance="outline" class="content">
+          <mat-label>Contenido</mat-label>
+          <textarea matInput formControlName="content" required></textarea>
+          <mat-error *ngIf="form.get('content')?.hasError('required')">El contenido es obligatorio.</mat-error>
+        </mat-form-field>
+      </form>
+    </div>
+  
+    <div class="button" mat-dialog-actions>
+      <div class="button-container">
+        <button mat-raised-button color="primary" (click)="guardarPost()">Publicar</button>
+        <button 
+          mat-button 
+          class="cancelar" 
+          (click)="cerrar()"
+        >
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+  

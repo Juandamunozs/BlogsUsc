@@ -1,0 +1,38 @@
+<div class="dialog-container"> <!-- Contenedor principal para todo el diálogo -->
+    <div class="container">
+        <h1 class="titulo" mat-dialog-title>Reacciones</h1>
+  
+        <div mat-dialog-content>
+            <div class="likes-container">
+                <ng-container *ngIf="saveLike.length > 0; else noLikes">
+                    <div class="like" *ngFor="let like of saveLike">
+                        <div class="like-info">
+                            <div class="like-info-container">
+                                <mat-icon class="heart-icon">favorite</mat-icon>
+                                <div class="like-info-username">
+                                    <span>{{like.userName}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+  
+                <ng-template #noLikes>
+                    <div class="no-likes-message">
+                        <!-- <mat-icon class="heart-icon">favorite</mat-icon> -->
+                        <span>No hay likes para este post</span>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+  
+        <div class="button" mat-dialog-actions>
+            <div class="button-container">
+                <button mat-button class="cancelar" (click)="cerrar()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+  

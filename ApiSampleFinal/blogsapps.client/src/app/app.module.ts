@@ -23,6 +23,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PostDialogComponent } from './assets/dialog/post/post_create';
 import { UserDialogComponent } from './assets/dialog/user/user_create';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { CommentDialogComponent, viewLikeDialogComponent } from './assets/export_dialog';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
     ProfileComponent,
     PostDialogComponent,
     UserDialogComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    viewLikeDialogComponent,
+    CommentDialogComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

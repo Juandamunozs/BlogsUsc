@@ -6,6 +6,7 @@ import { HomeService } from './home.service';
 import { LoginService } from '../login/login.service';
 import { MatDialog } from '@angular/material/dialog';
 import { PostDialogComponent } from '../../assets/dialog/post/post_create';
+import { CommentDialogComponent, viewLikeDialogComponent } from '../../assets/export_dialog';
 
 @Component({
   selector: 'app-home',
@@ -57,6 +58,7 @@ export class HomeComponent implements OnInit {
 
     this.user();
 
+
     this.filteredUsers = this.controlCambios.valueChanges.pipe(
       startWith(''),
       map(value => this._filter(value))
@@ -104,12 +106,29 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  CommentDialogComponent(message: any): void {
+    this.dialog.open(CommentDialogComponent, {
+      data: { message: message },
+      disableClose: true
+    });
+  }
+  
+  view_likeDialogComponent(message: string): void {
+    this.dialog.open(viewLikeDialogComponent, {
+      data: { message: message },
+      disableClose: true
+    });
+  }
+
+
   crearPost(): void {
     const userId = localStorage.getItem('userId');
     if (userId != null) {
       this.PostDialogComponent('Crear Post');
     }
   }
+
+  
 
 
   Login(): void {
@@ -145,9 +164,11 @@ export class HomeComponent implements OnInit {
         (Response: any) => {
           console.log('Respuesta del servidor:', Response);
           this.user();
+          this.user();
         },
         (error) => {
           console.error('Error al obtener los posts:', error);
+          this.user();
           this.user();
         }
       );
@@ -159,14 +180,21 @@ export class HomeComponent implements OnInit {
     this.homeService.dislike(likeId).subscribe(
       (Response: any) => {
         console.log('Respuesta del servidor:', Response);
-        // this.user();
+        this.user();
         this.user();
       },
       (error) => {
         console.error('Error al obtener los posts:', error);
         this.user();
+        this.user();
       }
     );
+  }
+
+  viewLikes(postId: any): void {
+
+    this.view_likeDialogComponent(postId);
+
   }
 
   comment(postId: string): void {
@@ -202,6 +230,8 @@ export class HomeComponent implements OnInit {
             });
           });
 
+          this.comentarios = this.comentarios.reverse();
+
           console.log('Comentarios:', this.comentarios);
         },
         (error) => {
@@ -220,16 +250,16 @@ export class HomeComponent implements OnInit {
     const userId = localStorage.getItem('userId');
     const postId = localStorage.getItem('postId');
 
-    if (userId != null && postId != null) {
-      this.homeService.comentarPost(userId, postId, this.nuevoComentario).subscribe(
-        (Response: any) => {
-          console.log('Respuesta del servidor:', Response);
-        },
-        (error) => {
-          console.error('Error al obtener los posts:', error);
-        }
-      );
-    }
+    // if (userId != null && postId != null) {
+    //   this.homeService.comentarPost(userId, postId, this.nuevoComentario).subscribe(
+    //     (Response: any) => {
+    //       console.log('Respuesta del servidor:', Response);
+    //     },
+    //     (error) => {
+    //       console.error('Error al obtener los posts:', error);
+    //     }
+    //   );
+    // }
 
   }
 
@@ -237,23 +267,55 @@ export class HomeComponent implements OnInit {
     const userId = localStorage.getItem('userId');
     const postId = localStorage.getItem('postId');
 
-    if (userId != null && postId != null) {
-      this.homeService.comentarPost(userId, postId, this.nuevoComentario).subscribe(
-        (Response: any) => {
-          console.log('Respuesta del servidor:', Response);
-          this.comment(postId);
-          this.nuevoComentario = '';
-        },
-        (error) => {
-          console.error('Error al obtener los posts:', error);
-        }
-      );
-    }
+    this.CommentDialogComponent('add');
+
+    // if (userId != null && postId != null) {
+    //   this.homeService.comentarPost(userId, postId, this.nuevoComentario).subscribe(
+    //     (Response: any) => {
+    //       console.log('Respuesta del servidor:', Response);
+    //       this.comment(postId);
+    //       this.nuevoComentario = '';
+    //     },
+    //     (error) => {
+    //       console.error('Error al obtener los posts:', error);
+    //     }
+    //   );
+    // }
   }
 
   edit(postId: string): void {
     this.PostDialogComponent(postId);
   }
+
+  commentEdit(content: string, id: string, postId: string, pubDate: string, userId: string): void {
+    // Crear el objeto con los datos que vienen como parámetros
+    const commentData = {
+        content: content,
+        id: id,
+        postId: postId,
+        pubDate: pubDate,
+        userId: userId
+    };
+
+   console.log('Vamos a editar el comentario:', commentData);
+
+    // Pasar el objeto al componente del diálogo
+    this.CommentDialogComponent(commentData);
+}
+
+deleteComentario(commentId: string): void {
+  console.log('Vamos a eliminar el comentario con id:', commentId);
+  this.homeService.deleteComment(commentId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor:', Response);
+      this.comment(this.postId_comentario);
+    },
+    (error) => {
+      console.error('Error al obtener los posts:', error);
+    }
+  );
+}
+
 
   delete(postId: string): void {
 

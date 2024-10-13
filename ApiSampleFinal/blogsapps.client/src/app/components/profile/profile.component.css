@@ -124,10 +124,10 @@
   object-fit: cover;
 }
 
-.reacciones mat-icon:hover {
-  /* background-color: #F7C600;  */
-  border-color: #4682B4;
-  transform: scale(1.2);
+.reacciones {
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 10px; /* Espaciado entre los elementos */
 }
 
 .example-icon {
@@ -149,10 +149,9 @@ mat-icon {
 }
 
 .reacciones {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 10px; /* Espaciado entre los elementos */
 }
 
 .home-container button {
@@ -184,7 +183,7 @@ mat-icon {
 }
 
 
-.comments-container {
+/* .comments-container {
   width: 100%;
   display: flex;
   flex-direction: column; 
@@ -230,10 +229,10 @@ mat-icon {
   margin-left: 14%;
   margin-right: 5%;
   margin-top: 2%;
-  /* margin-left: -70%; */
-}
+  margin-left: -70%;
+} 
 
-mat-form-field {
+/* mat-form-field {
   margin-left: 35%;
 }
 
@@ -241,7 +240,7 @@ mat-form-field {
   align-items: center;
   text-align: center;
   margin-left: 35%;
-}
+} */
 
 .titulo {
   text-align: center;
@@ -286,4 +285,65 @@ mat-form-field {
 .option-button:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+}
+.comments-container {
+  margin-top: 16px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.contenido{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comments-list {
+  max-height: 300px; 
+  overflow-y: auto; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  width: 100%; 
+  max-width: 600px; 
+}
+
+.comment-item {
+  border-bottom: 1px solid #eee; 
+  padding: 8px 0; 
+  width: 100%; 
+}
+
+.comment-item:last-child {
+  border-bottom: none; 
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #333; 
+}
+
+.comment-text {
+  color: #555; 
+  font-size: 14px; 
+  margin-top: 4px; 
+}
+
+mat-card-actions {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+button {
+  margin-top: 10px; 
+}
+
+.comentario {
+  margin-left: -40%;
+  margin-right: 15%;
+  margin-top: 2%;
+  /* margin-left: -70%; */
 }

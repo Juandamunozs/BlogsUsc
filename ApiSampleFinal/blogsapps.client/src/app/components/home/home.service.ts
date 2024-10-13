@@ -32,9 +32,11 @@ export class HomeService {
     }
 
     // Comentario para crear un comentario
-    public comentarPost(userId: string, postId: string, comentario: string) {
+    public comentarPost(userId: string, comentario: string) {
 
         const pubDate = this.getDate();
+
+        const postId = localStorage.getItem('postId');
 
         const objLogin = { UserId: userId, PostId: postId, Content: comentario, PubDate: pubDate };
 
@@ -44,6 +46,25 @@ export class HomeService {
         return this.http.post<any>(`${this.API}Comments`, objLogin);
 
     }
+
+    public actualizarComentario(userId: string, postId: string, comentario: string, commentId: string) {
+
+        const pubDate = this.getDate();
+    
+        const objLogin = { 
+            Id : commentId,
+            UserId: userId, 
+            PostId: postId, 
+            Content: comentario, 
+            PubDate: pubDate 
+        };
+    
+        console.log('Objeto de usuario a comentar (actualización): ', objLogin);
+    
+        // Enviar la solicitud PUT
+        return this.http.put<any>(`${this.API}Comments/${commentId}`, objLogin);
+    }
+    
 
 
     // Método para dar like
@@ -72,6 +93,15 @@ export class HomeService {
         return this.http.delete<any>(`${this.API}Posts/${postId}`);
 
     }
+
+    public deleteComment(commentId: string) {
+            
+            console.log('Objeto de post a eliminar: ', `${this.API}Comments/${commentId}`);
+    
+            // Enviar la solicitud POST
+            return this.http.delete<any>(`${this.API}Comments/${commentId}`);
+    
+        }
 
     public dislike(LikeId: string) {
 
