@@ -84,6 +84,7 @@ mat-card-actions {
   border-radius: 2%;
   align-items: center;
   justify-content: center;
+  
 }
 
 .reacciones {
@@ -91,6 +92,7 @@ mat-card-actions {
   align-items: center;
   justify-content: center;
   width: 100%;
+  grid-column: auto;
 }
 
 .like {}

@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div class="container-login">
+  <div class="container-login"> 
     <div class="button-paginaPrincipal">
 
       <div class="logo">
@@ -54,7 +54,7 @@
           <!-- Password Field -->
           <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Contraseña</mat-label>
-            <input matInput id="contraseña" formControlName="contraseña" placeholder="contraseña" class="custom-input">
+            <input matInput id="contraseña" formControlName="contraseña" type="password" placeholder="contraseña" class="custom-input">
             <mat-error *ngIf="form.get('contraseña')?.invalid && form.get('contraseña')?.touched">
               <ng-container *ngIf="form.get('contraseña')?.errors?.['required']">
                 La contraseña es <strong>obligatoria.</strong>

@@ -73,7 +73,7 @@
           <!-- Password Field -->
           <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Contraseña</mat-label>
-            <input matInput id="contraseña" formControlName="contraseña" placeholder="contraseña" class="custom-input">
+            <input matInput id="contraseña" type="password" formControlName="contraseña" placeholder="contraseña" class="custom-input">
             <mat-error *ngIf="form.get('contraseña')?.invalid && form.get('contraseña')?.touched">
               <ng-container *ngIf="form.get('contraseña')?.errors?.['required']">
                 La contraseña es <strong>obligatoria.</strong>
@@ -87,7 +87,7 @@
           <!-- Password confirm Field -->
           <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Confirmar contraseña</mat-label>
-            <input matInput id="confirmarContraseña" formControlName="confirmarContraseña"
+            <input matInput id="confirmarContraseña" type="password" formControlName="confirmarContraseña"
               placeholder="Confirmar contraseña" class="custom-input">
             <mat-error *ngIf="form.get('confirmarContraseña')?.invalid && form.get('confirmarContraseña')?.touched">
               <ng-container *ngIf="form.get('confirmarContraseña')?.errors?.['required']">

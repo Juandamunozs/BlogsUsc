@@ -13,7 +13,7 @@ import { PostDialogComponent } from '../../assets/dialog/post/post_create';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
+
   form: FormGroup | undefined;
 
   rol: string = '';
@@ -23,20 +23,21 @@ export class HomeComponent implements OnInit {
   comentarPostFlag: boolean = false;
   nuevoComentario: string = '';
   postId_comentario: string = '';
-  
+
   comentarios: any[] = [];
   forMe: any[] = [];
   usuarios: any[] = [];
   posts: any[] = [];
   buscar: any[] = [];
+  likePost: any[] = [];
 
   userId: string = '';
   permised: string = '';
-  
+
   filteredUsers: Observable<any[]> = of([]);
   controlCambios = new FormControl();
 
-  constructor(private route: Router, private homeService: HomeService, private loginService: LoginService, public dialog: MatDialog) {}
+  constructor(private route: Router, private homeService: HomeService, private loginService: LoginService, public dialog: MatDialog) { }
 
   ngOnInit() {
     this.logueado = localStorage.getItem('rol') || '';
@@ -90,8 +91,8 @@ export class HomeComponent implements OnInit {
 
   private _filter(value: string): any[] {
     const filterValue = value.toLowerCase();
-    return this.forMe.filter(user => 
-      user.username.toLowerCase().includes(filterValue) || 
+    return this.forMe.filter(user =>
+      user.username.toLowerCase().includes(filterValue) ||
       user.descripcion.toLowerCase().includes(filterValue)
     );
   }
@@ -99,7 +100,7 @@ export class HomeComponent implements OnInit {
   PostDialogComponent(message: string): void {
     this.dialog.open(PostDialogComponent, {
       data: { message: message },
-      disableClose: true 
+      disableClose: true
     });
   }
 
@@ -135,20 +136,37 @@ export class HomeComponent implements OnInit {
   like(postId: any): void {
 
     const userId = localStorage.getItem('userId');
-    
-    console.log('El usuario con id', userId , 'le dio like al Post con id ', postId)
 
-    if(userId != null){
+    console.log('El usuario con id', userId, 'le dio like al Post con id ', postId)
+
+    if (userId != null) {
 
       this.homeService.like(userId, postId).subscribe(
         (Response: any) => {
           console.log('Respuesta del servidor:', Response);
+          this.user();
         },
         (error) => {
           console.error('Error al obtener los posts:', error);
+          this.user();
         }
       );
     }
+  }
+
+  dislike(likeId: any): void {
+    console.log('vamos a dar dislike al like con id:', likeId);
+    this.homeService.dislike(likeId).subscribe(
+      (Response: any) => {
+        console.log('Respuesta del servidor:', Response);
+        // this.user();
+        this.user();
+      },
+      (error) => {
+        console.error('Error al obtener los posts:', error);
+        this.user();
+      }
+    );
   }
 
   comment(postId: string): void {
@@ -162,41 +180,40 @@ export class HomeComponent implements OnInit {
     console.log(this.comentario ? 'Abrir' : 'Cerrar');
 
     if (this.comentario) {
-        this.postId_comentario = postId;
+      this.postId_comentario = postId;
 
-        // console.log('Vamos a comentar el post:', postId);
+      // console.log('Vamos a comentar el post:', postId);
 
-        this.comentarios = [];
-        localStorage.setItem('postId', postId);
+      this.comentarios = [];
+      localStorage.setItem('postId', postId);
 
-        this.homeService.comentarios().subscribe(
-            (Response: any) => {
-              // console.log('Respuesta del servidor:', Response);
-                Response.forEach((comentario: any) => {
-                    this.usuarios.forEach((user: any) => {
-                      // console.log(comentario.postId, '==', postId, '&&', comentario.userId, '==', user.userId);
-                        if (comentario.postId == postId && comentario.userId == user.userId) {
-                            this.comentarios.push({
-                                ...comentario,
-                                userName: user.name 
-                            }); 
-                        }
-                    });
+      this.homeService.comentarios().subscribe(
+        (Response: any) => {
+          // console.log('Respuesta del servidor:', Response);
+          Response.forEach((comentario: any) => {
+            this.usuarios.forEach((user: any) => {
+              // console.log(comentario.postId, '==', postId, '&&', comentario.userId, '==', user.userId);
+              if (comentario.postId == postId && comentario.userId == user.userId) {
+                this.comentarios.push({
+                  ...comentario,
+                  userName: user.name
                 });
+              }
+            });
+          });
 
-                console.log('Comentarios:', this.comentarios);
-            },
-            (error) => {
-                console.error('Error al obtener los posts:', error);
-            }
-        );
+          console.log('Comentarios:', this.comentarios);
+        },
+        (error) => {
+          console.error('Error al obtener los posts:', error);
+        }
+      );
 
     } else {
-        localStorage.removeItem('postId');
+      localStorage.removeItem('postId');
     }
-}
+  }
 
-  
 
   comentarPost(): void {
 
@@ -241,29 +258,30 @@ export class HomeComponent implements OnInit {
   delete(postId: string): void {
 
     const userId = localStorage.getItem('userId');
-    
-    console.log('El usuario con id', userId , 'elimino el Post con id ', postId)
 
-    if(userId != null){
+    console.log('El usuario con id', userId, 'elimino el Post con id ', postId)
+
+    if (userId != null) {
 
       this.homeService.deletePost(userId, postId).subscribe(
         (Response: any) => {
           console.log('Respuesta del servidor:', Response);
-          window.location.reload();
+          this.user();
         },
         (error: any) => {
           console.error('Error al obtener los posts:', error);
         }
       );
     }
-    
+
   }
 
   post(usuarios: any[]): void {
+    this.posts = [];
     this.homeService.post().subscribe(
       (Response: any) => {
         console.log('Respuesta del servidor:', Response);
-        this.posts = Response;  
+        this.posts = Response;
         this.renderizar(this.posts, usuarios);
       },
       (error) => {
@@ -271,32 +289,73 @@ export class HomeComponent implements OnInit {
       }
     );
   }
-  
+
   user(): void {
+    this.usuarios = [];
     this.loginService.Login().subscribe(
       (Response: any) => {
-        console.log('Respuesta del servidor:', Response);
+        console.log('Respuesta del servidor usuarios:', Response);
         this.usuarios = Response;
-        this.post(this.usuarios); 
+        this.likepost();
+        this.post(this.usuarios);
       },
       (error) => {
         console.log('Error del servidor:', error);
+        this.route.navigate(['/Mantenimiento']);
       }
     );
   }
-  
+
+  likepost(): void {
+    this.likePost = [];
+    this.homeService.likepost().subscribe(
+      (Response: any) => {
+        console.log('Respuesta del servidor de likes:', Response);
+
+        Response.forEach((like: any) => {
+
+          if (like.userId == this.userId) {
+            this.likePost.push(like);
+          }
+        });
+
+        console.log('Likes:', this.likePost);
+
+      },
+      (error) => {
+        console.error('Error al obtener los posts:', error);
+      }
+    );
+  }
+
   renderizar(posts: any[], usuarios: any[]): void {
     this.forMe = [];
-
+    
     console.log('Posts:', posts);
+    console.log('Users', usuarios);
+    console.log('Likes:', this.likePost);
 
-    console.log('Users', usuarios)
-
-
+    // Filtrar duplicados en likePost (si es necesario, revisa esto)
+    // this.likePost = this.likePost.filter((like, index, self) => 
+    //   index === self.findIndex((t) => (
+    //       t.userId === like.userId && t.postId === like.postId
+    //   ))
+    // );
+  
+    console.log('Likes:', this.likePost);
+  
     posts.forEach((post: any) => {
       usuarios.forEach((user: any) => {
-        console.log(post.userId, '==', this.userId)
+        console.log(post.userId, '==', this.userId);
         if (post.userId === user.userId) {
+          // Verificar si hay un like para este post
+          const like = this.likePost.find(like => 
+            like.postId === post.id // Aquí no compares con userId
+          );
+    
+          // Si existe un like, obtener su ID; si no, establecer como null
+          const likeId = like ? like.id : null;
+    
           this.forMe.push({
             userId: user.userId,
             postId: post.id,
@@ -304,27 +363,28 @@ export class HomeComponent implements OnInit {
             user: user.email,
             descripcion: post.content,
             title: post.title,
-            pubDate: post.pubDate
+            pubDate: post.pubDate.replace('T', ' '),
+            liked: !!like,  
+            likeId: likeId 
           });
         }
       });
-    }
-  
-  );
-
-    const uniqueDescriptions = new Set(); 
+    });
+    
+    const uniqueDescriptions = new Set();
     this.forMe = this.forMe.filter((item) => {
       if (!uniqueDescriptions.has(item.descripcion)) {
-        uniqueDescriptions.add(item.descripcion); 
-        return true; 
+        uniqueDescriptions.add(item.descripcion);
+        return true;
       }
-      return false; 
+      return false;
     });
-
+  
     this.forMe = this.forMe.reverse();
-
     this.buscar = this.forMe;
-
+  
     console.log('Usuarios que me interesan:', this.forMe);
-  }
+}
+
+  
 }

@@ -19,18 +19,24 @@ export class HomeService {
         return this.http.get<any>(`${this.API}Posts`);
     }
 
-        // Método para traer los post
-        public comentarios() {
-            // Enviar la solicitud POST
-            return this.http.get<any>(`${this.API}Comments`);
-        }
+    // Método para traer los post
+    public likepost() {
+        // Enviar la solicitud POST
+        return this.http.get<any>(`${this.API}LikePosts`);
+    }
+
+    // Método para traer los post
+    public comentarios() {
+        // Enviar la solicitud POST
+        return this.http.get<any>(`${this.API}Comments`);
+    }
 
     // Comentario para crear un comentario
-    public comentarPost(userId: string, postId: string, comentario: string){
+    public comentarPost(userId: string, postId: string, comentario: string) {
 
         const pubDate = this.getDate();
 
-        const objLogin = { UserId: userId, PostId: postId, Content: comentario, PubDate: pubDate};
+        const objLogin = { UserId: userId, PostId: postId, Content: comentario, PubDate: pubDate };
 
         console.log('Objeto de usuario a comentar: ', objLogin);
 
@@ -38,24 +44,27 @@ export class HomeService {
         return this.http.post<any>(`${this.API}Comments`, objLogin);
 
     }
-    
+
 
     // Método para dar like
-    public like(userId: string, postId: string){
+    public like(userId: string, postId: string) {
 
-        const objLogin = { userId: userId, postId: postId};
+        const userName = localStorage.getItem('name');
+         
+        const userEmail = localStorage.getItem('user');
+
+        const objLogin = { userId: userId, postId: postId, userName: userName, userEmail: userEmail };
 
         console.log('Objeto de usuario a likear: ', objLogin);
 
         // Enviar la solicitud POST
         return this.http.post<any>(`${this.API}LikePosts`, objLogin);
 
-
     }
 
-    public deletePost(userId:string, postId: string){
+    public deletePost(userId: string, postId: string) {
 
-        const objLogin = { userId: userId, postId: postId};
+        const objLogin = { userId: userId, postId: postId };
 
         console.log('Objeto de post a eliminar: ', `${this.API}Posts/${postId}`);
 
@@ -64,12 +73,26 @@ export class HomeService {
 
     }
 
+    public dislike(LikeId: string) {
+
+        // const objLogin = { userId: userId, postId: postId };
+
+        console.log('Objeto de post a eliminar: ', `${this.API}Posts/${LikeId}`);
+
+        // console.log('Objeto de post a eliminar: ', `${this.API}Posts/${postId}`);
+
+        // Enviar la solicitud POST
+        // return this.http.delete<any>(`${this.API}Posts/${postId}`);
+        return this.http.delete<any>(`${this.API}LikePosts/${LikeId}`);
+
+    }
+
     public getDate() {
         const currentDate = new Date();
         const year = currentDate.getFullYear();
         const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Meses de 0 a 11
         const day = String(currentDate.getDate()).padStart(2, '0'); // Días del mes
-    
+
         return `${year}-${month}-${day}`;
     }
 

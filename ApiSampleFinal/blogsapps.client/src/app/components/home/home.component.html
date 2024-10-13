@@ -54,9 +54,9 @@
       </button>
     </div>
   </div>
-  
 
-<!-- Publicar post -->
+
+  <!-- Publicar post -->
   <div class="body" *ngFor="let usuario of forMe">
     <mat-card class="example-card">
       <div class="revisarPerfil" (click)="revisarPerfil(usuario.userId)">
@@ -68,41 +68,59 @@
       </div>
       <mat-card-content>
         <h5 class="titulo">{{ usuario.title }}</h5>
-        <h6 class="contenido">{{ usuario.descripcion}}</h6>
-        <h6 class="publicacion">{{ usuario.pubDate}}</h6>
+        <h6 class="contenido">{{ usuario.descripcion }}</h6>
+        <h6 class="publicacion">{{ usuario.pubDate }}</h6>
+
         <mat-card-actions>
-          <div class="reacciones">
-            <button (click)="like(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor' || rol ==='Lector'" mat-button><mat-icon class="like">favorite</mat-icon></button>
-            <button (click)="comment(usuario.postId)" *ngIf="rol === 'Admin' || rol ==='Autor'" mat-button><mat-icon
-                class="comment" >comment</mat-icon></button>
-             <button (click)="edit(usuario.postId)" *ngIf="rol === 'Admin' || (usuario.userId == permised && rol == 'Autor')" mat-button><mat-icon class="share">edit</mat-icon></button> 
-            <button (click)="delete(usuario.postId)" *ngIf="rol == 'Admin' || (usuario.userId == permised && logueado)" mat-button><mat-icon
-                class="delete">delete</mat-icon></button>
+          <div class="reacciones" style="display: flex; align-items: center;">
+            <div class="like" *ngIf="usuario.liked == true">
+              <button (click)="dislike(usuario.likeId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
+                mat-button [ngStyle]="{'background-color': 'white', 'color': 'red'}">
+                <mat-icon class="like">favorite</mat-icon>
+              </button>
+            </div>
+
+            <div class="dislike" *ngIf="usuario.liked == false">
+              <button (click)="like(usuario.postId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
+                mat-button>
+                <mat-icon class="like">favorite</mat-icon>
+              </button>
+            </div>
+
+            <button (click)="comment(usuario.postId)" *ngIf="rol === 'Admin' || rol === 'Autor'" mat-button>
+              <mat-icon class="comment">comment</mat-icon>
+            </button>
+
+            <button (click)="edit(usuario.postId)"
+              *ngIf="rol === 'Admin' || (usuario.userId == permised && rol == 'Autor')" mat-button>
+              <mat-icon class="share">edit</mat-icon>
+            </button>
+
+            <button (click)="delete(usuario.postId)" *ngIf="rol == 'Admin' || (usuario.userId == permised && logueado)"
+              mat-button>
+              <mat-icon class="delete">delete</mat-icon>
+            </button>
           </div>
         </mat-card-actions>
       </mat-card-content>
-      <!-- <div class="imagen">
-        <img mat-card-image class="image" [src]="usuario.imageUrl" alt="Foto de {{ usuario.username }}">
-      </div> -->
 
+      <!-- Sección de comentarios -->
       <mat-card-actions *ngIf="comentario && postId_comentario == usuario.postId">
-        <!-- Contenedor para los comentarios existentes -->
         <div class="comments-container">
           <div class="comments-list" *ngFor="let comentario of comentarios">
             <div class="comment-item">
-              <div class="comment-author">{{comentario.userName}}</div>
-              <div class="comment-text">{{comentario.content}}</div>
-              <div class="comment-date">{{comentario.pubDate}}</div>
+              <div class="comment-author">{{ comentario.userName }}</div>
+              <div class="comment-text">{{ comentario.content }}</div>
+              <div class="comment-date">{{ comentario.pubDate }}</div>
             </div>
           </div>
         </div>
 
-        <!-- Botón para comentar -->
         <button *ngIf="!comentarPostFlag" (click)="comentarPost()" mat-raised-button color="primary" type="button">
           Comentar
         </button>
-
       </mat-card-actions>
+
       <!-- Formulario para añadir un nuevo comentario -->
       <form class="comment-form" *ngIf="comentarPostFlag && comentario && postId_comentario == usuario.postId">
         <div class="comentario">
@@ -116,8 +134,6 @@
             comentario</button>
         </div>
       </form>
-
-
     </mat-card>
   </div>
 </div>

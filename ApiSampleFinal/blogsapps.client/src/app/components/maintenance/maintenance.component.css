@@ -1,0 +1,75 @@
+/* maintenance.component.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* Fondo blanco para un aspecto limpio */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.maintenance-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007bff; /* Color azul corporativo */
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555; /* Color gris para texto */
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* maintenance.component.css */
+.button {
+  text-align: center; /* Centra el botón */
+  margin-top: 20px; /* Espacio superior */
+}
+
+button {
+  background-color: #007bff; /* Color azul corporativo */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 12px 25px; /* Espaciado */
+  font-size: 1rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+  background-color: #004494; /* Color más oscuro al hacer clic */
+  transform: translateY(0); /* Regresa a la posición original */
+}
+

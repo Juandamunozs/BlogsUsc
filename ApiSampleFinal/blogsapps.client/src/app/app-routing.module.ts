@@ -5,12 +5,14 @@ import { LoginCreateComponent } from './components/login-create/login-create.com
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 
 const routes: Routes = [
   {path: 'Home', component: HomeComponent},
   { path: 'Login', component: LoginComponent },
   { path: 'Profile/:username', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'LoginCreate', component: LoginCreateComponent },
+  { path: 'Mantenimiento', component: MaintenanceComponent },
   { path: '', redirectTo: '/Home', pathMatch: 'full' }, 
   { path: '**', redirectTo: '/Home' } 
 ];

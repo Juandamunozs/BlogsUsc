@@ -1,0 +1,20 @@
+<!-- maintenance.component.html -->
+<div class="maintenance-container">
+  <div class="maintenance-content">
+    <h1>Bloghub USC - Mantenimiento Programado</h1>
+    <p>Estimado usuario,</p>
+    <p>Estamos realizando tareas de mantenimiento para mejorar su experiencia en nuestro blog. Durante este tiempo, el sitio no estará disponible.</p>
+    <p>Le pedimos disculpas por cualquier inconveniente y agradecemos su comprensión.</p>
+    <p>Por favor, intente acceder más tarde.</p>
+    <div class="button">
+      <button type="button" (click)="reloadPage()" [ngClass]="{'btn-primary': true}">
+        Reintentar
+      </button>
+    </div>
+    <div class="contact-info">
+      <p>Si tiene preguntas, no dude en <a href="mailto:juan.munoz40@usc.edu.co">contactarnos</a>.</p>
+    </div>
+  </div>
+</div>
+
+  

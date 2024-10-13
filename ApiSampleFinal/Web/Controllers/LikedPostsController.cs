@@ -5,7 +5,9 @@ using ApiSampleFinal.Models.LikePostModels;
 using AutoMapper;
 using BlogsApps.Server.Models;
 using BlogsApps.Server.Repositories;
+using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogsApps.Server.Controllers
 {
@@ -15,12 +17,22 @@ namespace BlogsApps.Server.Controllers
     {
         private readonly ILikedPostRepository _likePostRepository;
         private readonly IMapper _mapper;
+        private readonly AppDbContext _context;
 
-        public LikePostsController(ILikedPostRepository likePostRepository, IMapper mapper)
+        //public LikePostsController(ILikedPostRepository likePostRepository, IMapper mapper)
+        //{
+        //    _likePostRepository = likePostRepository;
+        //    _mapper = mapper;
+
+        //}
+
+        public LikePostsController(ILikedPostRepository likePostRepository, IMapper mapper, AppDbContext context) // Agrega el context aquí
         {
             _likePostRepository = likePostRepository;
             _mapper = mapper;
+            _context = context ?? throw new ArgumentNullException(nameof(context)); // Asegúrate de que el context no sea null
         }
+
 
         // GET: api/LikePosts
         [HttpGet]
@@ -80,5 +92,31 @@ namespace BlogsApps.Server.Controllers
             await _likePostRepository.DeleteLikePostAsync(id);
             return NoContent();
         }
+
+        // GET: api/LikePosts/post/{postId}
+        [HttpGet("post/{postId}")]
+        public async Task<ActionResult<IEnumerable<LikePostDTO>>> GetLikePostsByPostId(Guid postId)
+        {
+            // Realiza la consulta directamente en el controlador
+            var likedPosts = await (from lp in _context.LikedPosts
+                                    join u in _context.Users on lp.UserId equals u.UserId
+                                    where lp.PostId == postId
+                                    select new LikePostDTO
+                                    {
+                                        Id = lp.Id,
+                                        UserId = lp.UserId,
+                                        PostId = (Guid)lp.PostId,
+                                        UserName = u.Name,
+                                        UserEmail = u.Email
+                                    }).ToListAsync();
+
+            if (likedPosts == null || !likedPosts.Any())
+            {
+                return NotFound(); // Si no hay resultados, devuelve un 404
+            }
+
+            return Ok(likedPosts); // Devuelve los resultados encontrados
+        }
+
     }
 }

@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "9NhD6/Jp50ZXESuXe/WpGq/xUqn0h02Rhx+rE4X2bvU=",
+  "Hash": "o9KolZ2mD1swcoekh1QudFZjY5m0FPkEcJ9uUTJ5/oI=",
   "Source": "ApiSampleFinal",
   "BasePath": "_content/ApiSampleFinal",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

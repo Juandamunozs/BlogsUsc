@@ -218,6 +218,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BlogsApps.Server.Controllers.LikePostsController",
+    "Method": "GetLikePostsByPostId",
+    "RelativePath": "api/LikePosts/post/{postId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiSampleFinal.Models.LikePostModels.LikePostDTO, ApiSampleFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ApiSampleFinal.Controllers.MilkSalesController",
     "Method": "AddMilkExistences",
     "RelativePath": "api/MilkSales/AddMilkExistences",

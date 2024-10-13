@@ -66,7 +66,7 @@ export class LoginCreateComponent {
       this.loginCreateService.LoginCreate(email, contraseña, role, name).subscribe(
         (Response: any) => {
           console.log('Respuesta del servidor:', Response);
-
+          this.route.navigate(['/Login']);
         });
 
     } else {

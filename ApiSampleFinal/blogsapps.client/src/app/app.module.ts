@@ -22,6 +22,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PostDialogComponent } from './assets/dialog/post/post_create';
 import { UserDialogComponent } from './assets/dialog/user/user_create';
+import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserDialogComponent } from './assets/dialog/user/user_create';
     HomeComponent,
     ProfileComponent,
     PostDialogComponent,
-    UserDialogComponent
+    UserDialogComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
