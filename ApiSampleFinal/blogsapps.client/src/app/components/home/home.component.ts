@@ -427,7 +427,8 @@ deleteComentario(commentId: string): void {
             title: post.title,
             pubDate: post.pubDate.replace('T', ' '),
             liked: !!like,  
-            likeId: likeId 
+            likeId: likeId,
+            status: post.status
           });
         }
       });
@@ -448,5 +449,16 @@ deleteComentario(commentId: string): void {
     console.log('Usuarios que me interesan:', this.forMe);
 }
 
+AceptarPost(postId: string): void {
+  console.log('Vamos a aceptar el post con id:', postId);
+}
+
+DesbanearPost(postId: string): void { 
+  console.log('Vamos a desbanear el post con id:', postId);
+}
+
+BanearPost(postId: string): void {
+  console.log('Vamos a banear el post con id:', postId);
+}
   
 }

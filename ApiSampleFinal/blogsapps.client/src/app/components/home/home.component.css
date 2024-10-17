@@ -335,3 +335,53 @@ button {
   margin-top: 2%;
   /* margin-left: -70%; */
 }
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Estilo para el botón de banear */
+.ban-button {
+  border: 1px solid red;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.ban-button:hover {
+  background-color: #ff6666;
+  transform: translateY(-2px);
+}
+
+/* Estilo para el botón de desbanear */
+.unban-button {
+  border: 1px solid green;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.unban-button:hover {
+  background-color: #66cc66;
+  transform: translateY(-2px);
+}
+
+/* Estilo para el botón de aceptar */
+.accept-button {
+  border: 1px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.accept-button:hover {
+  background-color: #3399ff;
+  transform: translateY(-2px);
+}
+
+/* Opcional: estilo general para todos los botones */
+mat-button {
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+}

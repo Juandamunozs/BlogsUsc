@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\likedpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\likedpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -40,8 +43,20 @@
         },
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LikedPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T15:54:49.852Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -50,14 +65,14 @@
               "RelativeDocumentMoniker": "Controllers\\LikedPostsController.cs",
               "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs",
               "RelativeToolTip": "Controllers\\LikedPostsController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwBoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T15:30:42.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -65,8 +80,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:45:45.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:45:45.253Z"
             }
           ]
         }

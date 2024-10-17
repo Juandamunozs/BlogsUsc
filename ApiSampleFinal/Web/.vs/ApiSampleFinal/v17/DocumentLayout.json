@@ -55,8 +55,7 @@
               "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\LikedPostRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T15:54:49.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T15:54:49.852Z"
             },
             {
               "$type": "Document",
@@ -64,9 +63,9 @@
               "Title": "LikedPostsController.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LikedPostsController.cs",
-              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs*",
-              "RelativeToolTip": "Controllers\\LikedPostsController.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBoAAAALAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\LikedPostsController.cs",
+              "RelativeToolTip": "Controllers\\LikedPostsController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwBoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T15:30:42.732Z",
               "EditorCaption": ""
@@ -81,8 +80,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T21:45:45.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T21:45:45.253Z"
             }
           ]
         }

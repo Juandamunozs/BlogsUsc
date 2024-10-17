@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginCreateService } from './login-create.service';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-login-create',
@@ -55,6 +56,11 @@ export class LoginCreateComponent {
 
   }
 
+    // Método para encriptar la contraseña con SHA-256
+    encryptPassword(password: string): string {
+      return CryptoJS.SHA256(password).toString();
+    }
+
   LoginCreate(): void {
     if (this.form.valid) {
       const email = this.form.get('email')?.value;
@@ -63,7 +69,9 @@ export class LoginCreateComponent {
       const role = this.form.get('role')?.value;
       const name = this.form.get('name')?.value;
 
-      this.loginCreateService.LoginCreate(email, contraseña, role, name).subscribe(
+      const encryptedPassword = this.encryptPassword(contraseña);
+
+      this.loginCreateService.LoginCreate(email, encryptedPassword, role, name).subscribe(
         (Response: any) => {
           console.log('Respuesta del servidor:', Response);
           this.route.navigate(['/Login']);
