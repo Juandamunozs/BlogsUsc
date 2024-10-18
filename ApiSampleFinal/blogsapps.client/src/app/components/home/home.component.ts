@@ -428,7 +428,9 @@ deleteComentario(commentId: string): void {
             pubDate: post.pubDate.replace('T', ' '),
             liked: !!like,  
             likeId: likeId,
-            status: post.status
+            status: post.status,
+            blogId: post.blogId,
+            rating: post.rating
           });
         }
       });
@@ -449,16 +451,40 @@ deleteComentario(commentId: string): void {
     console.log('Usuarios que me interesan:', this.forMe);
 }
 
-AceptarPost(postId: string): void {
-  console.log('Vamos a aceptar el post con id:', postId);
+AceptarPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Aceptado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Aceptar):', Response);
+      this.user(); 
+    },
+    (error) => {
+      console.error('Error al aceptar el post:', error);
+    }
+  );
 }
 
-DesbanearPost(postId: string): void { 
-  console.log('Vamos a desbanear el post con id:', postId);
+DesbanearPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Aceptado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Desbanear):', Response);
+      this.user(); 
+    },
+    (error) => {
+      console.error('Error al desbanear el post:', error);
+    }
+  );
 }
 
-BanearPost(postId: string): void {
-  console.log('Vamos a banear el post con id:', postId);
+BanearPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Rechazado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Banear):', Response);
+      this.user(); 
+    },
+    (error) => {
+      console.error('Error al banear el post:', error);
+    }
+  );
 }
-  
+ 
 }

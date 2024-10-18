@@ -58,7 +58,7 @@
 
   <!-- Publicar post -->
   <div class="body" *ngFor="let usuario of forMe">
-    <mat-card class="example-card"  *ngIf="(rol == 'Lector' && usuario.status == 'Aceptado') || (rol == 'Autor' && usuario.status == 'Aceptado') || (rol == 'Admin')">
+    <mat-card class="example-card"  *ngIf="(rol == 'Lector' && usuario.status == 'Aceptado') || (rol == 'Autor' && usuario.status == 'Aceptado') || (rol == 'Admin') || (userId == usuario.userId && usuario.status == 'Espera' && rol == 'Autor')">
       <div class="revisarPerfil" (click)="revisarPerfil(usuario.userId)">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
@@ -72,6 +72,7 @@
         <h5 class="titulo">{{ usuario.title }}</h5>
         <h6 class="contenido">{{ usuario.descripcion }}</h6>
         <h6 class="publicacion">{{ usuario.pubDate }}</h6>
+        <h6 class="status" [attr.data-status]="usuario.status">{{ usuario.status }}</h6>
 
         <mat-card-actions>
           <div class="reacciones" style="display: flex; align-items: center;"  *ngIf="usuario.status == 'Aceptado'">
@@ -112,7 +113,7 @@
         <mat-card-actions *ngIf="rol == 'Admin'" class="actions-container">
 
           <!-- Botón para banear el post -->
-          <button (click)="AceptarPost(usuario.postId)" 
+          <button (click)="BanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)"
                   *ngIf="usuario.status == 'Aceptado'" 
                   mat-button
                   [ngClass]="{'ban-button': true}" 
@@ -121,7 +122,7 @@
           </button>
         
           <!-- Botón para desbanear el post -->
-          <button (click)="DesbanearPost(usuario.postId)" 
+          <button (click)="DesbanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)" 
                   *ngIf="usuario.status == 'Rechazado'" 
                   mat-button
                   [ngClass]="{'unban-button': true}" 
@@ -130,7 +131,7 @@
           </button>
         
           <!-- Botón para aceptar el post -->
-          <button (click)="AceptarPost(usuario.postId)" 
+          <button (click)="AceptarPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)" 
                   *ngIf="usuario.status == 'Espera'" 
                   mat-button
                   [ngClass]="{'accept-button': true}" 

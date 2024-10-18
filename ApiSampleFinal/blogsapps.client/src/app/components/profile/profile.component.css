@@ -347,3 +347,48 @@ button {
   margin-top: 2%;
   /* margin-left: -70%; */
 }
+
+.status {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.1em; /* Aumenta el tamaño del texto */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  transition: background-color 0.3s ease, transform 0.2s; /* Añade una transición suave */
+}
+
+/* Estilo para el estado Aceptado */
+.status[data-status="Aceptado"] {
+  background-color: #4CAF50; /* Verde */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.5); /* Sombra */
+}
+
+/* Estilo para el estado Baneado */
+.status[data-status="Baneado"] {
+  background-color: #f44336; /* Rojo */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(244, 67, 54, 0.5); /* Sombra */
+}
+
+/* Estilo para el estado Rechazado */
+.status[data-status="Rechazado"] {
+  background-color: #ff9800; /* Naranja */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5); /* Sombra */
+}
+
+/* Estilo para el estado en Espera */
+.status[data-status="Espera"] {
+  background-color: #2196F3; /* Azul */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.5); /* Sombra */
+}
+
+/* Efecto hover
+.status:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse 
+} */
+
+

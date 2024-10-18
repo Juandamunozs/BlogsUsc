@@ -34,6 +34,16 @@ namespace BlogsApps.Server.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task UpdatePostStatusAsync(Guid id, string status)
+        {
+            var post = await _context.Posts.FindAsync(id);
+            if (post != null)
+            {
+                post.Status = status;
+                await _context.SaveChangesAsync();
+            }
+        }
+
         public async Task UpdatePostAsync(Post post)
         {
             _context.Posts.Update(post);

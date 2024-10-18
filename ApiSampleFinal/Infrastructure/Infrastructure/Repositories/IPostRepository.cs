@@ -13,5 +13,6 @@ namespace BlogsApps.Server.Repositories
         Task UpdatePostAsync(Post post);
         Task DeletePostAsync(Guid id);
         Task<bool> PostExistsAsync(Guid id);
+        Task UpdatePostStatusAsync(Guid id, string status);
     }
 }

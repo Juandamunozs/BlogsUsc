@@ -80,5 +80,35 @@ namespace BlogsApps.Server.Controllers
             await _postRepository.DeletePostAsync(id);
             return NoContent();
         }
+
+        [HttpPut("{id}/status")]
+        public async Task<IActionResult> UpdatePostStatus(Guid id, [FromBody] PostDTO postDTO)
+        {
+            if (id != postDTO.Id)
+            {
+                return BadRequest("ID mismatch.");
+            }
+
+            if (string.IsNullOrEmpty(postDTO.Status))
+            {
+                return BadRequest("Status is required.");
+            }
+
+            // Verifica si el post existe
+            var existingPost = await _postRepository.GetPostByIdAsync(id);
+            if (existingPost == null)
+            {
+                return NotFound();
+            }
+
+            // Actualiza el status
+            existingPost.Status = postDTO.Status;
+            await _postRepository.UpdatePostAsync(existingPost);
+
+            // Devuelve el post actualizado
+            var updatedPostDTO = _mapper.Map<PostDTO>(existingPost);
+            return Ok(updatedPostDTO);  // Devuelve el objeto actualizado
+        }
+
     }
 }

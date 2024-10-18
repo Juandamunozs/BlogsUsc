@@ -64,6 +64,30 @@ export class HomeService {
         // Enviar la solicitud PUT
         return this.http.put<any>(`${this.API}Comments/${commentId}`, objLogin);
     }
+
+    public actualizarStatus(id: string, title: string, content: string, userId: string, rating: string, status: string, blogId: string) {
+
+        const pubDate = this.getDate();
+
+        // Crear el objeto con los campos que recibes por argumento
+        const objPost = { 
+            id: id,            
+            title: title,      
+            content: content,  
+            pubDate: pubDate,  
+            userId: userId,    
+            rating: rating,   
+            status: status,    
+            blogId: blogId     
+        };
+    
+        console.log('Objeto enviado en la actualización: ', objPost);
+    
+        // Enviar la solicitud POST
+        return this.http.put<any>(`${this.API}Posts/${id}/status`, objPost);
+    }
+    
+    
     
 
 

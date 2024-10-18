@@ -17,7 +17,7 @@ export class postService {
     public crearPost(userId: string, title: string, content: string){
         const pubDate = this.getDate();
 
-        const objLogin = { UserId: userId, Title: title, Content: content, PubDate: pubDate, status: 'Publicado', rating: '5', blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"};
+        const objLogin = { UserId: userId, Title: title, Content: content, PubDate: pubDate, status: 'Espera', rating: '5', blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"};
 
         console.log('Objeto de usuario a comentar: ', objLogin);
 
@@ -58,7 +58,7 @@ export class postService {
             title: title,
             content: content,
             pubDate: pubDate,
-            status: 'Publicado',
+            status: 'Espera',
             id: postId,
             rating: '5',  
             blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"  

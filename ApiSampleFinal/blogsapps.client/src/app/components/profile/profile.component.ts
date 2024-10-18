@@ -483,4 +483,49 @@ CommentDialogComponent(message: any): void {
     disableClose: true
   });
 }
+
+AceptarPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Aceptado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Aceptar):', Response);
+      this.users();
+      this.users();
+      this.cargarperfil(this.username);
+      this.cargarperfil(this.username);
+    },
+    (error) => {
+      console.error('Error al aceptar el post:', error);
+    }
+  );
+}
+
+DesbanearPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Aceptado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Desbanear):', Response);
+      this.users();
+      this.users();
+      this.cargarperfil(this.username);
+      this.cargarperfil(this.username);
+    },
+    (error) => {
+      console.error('Error al desbanear el post:', error);
+    }
+  );
+}
+
+BanearPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {
+  this.homeService.actualizarStatus(id, title, content, userId, rating, 'Rechazado', blogId).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor (Banear):', Response);
+      this.users();
+      this.users();
+      this.cargarperfil(this.username);
+      this.cargarperfil(this.username);
+    },
+    (error) => {
+      console.error('Error al banear el post:', error);
+    }
+  );
+}
 }
