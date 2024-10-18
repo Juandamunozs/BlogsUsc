@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../../../environment/environment';
+import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
@@ -11,13 +12,22 @@ export class postService {
     // Definir los endpoints de la API
     private API = environment.API;
 
+    private apiKey = environment.API_KEY;
+    private baseUrl = 'https://generativelanguage.googleapis.com/v1beta';
+
     constructor(private http: HttpClient) { }
 
     // Método para agregar un nuevo punto de venta
-    public crearPost(userId: string, title: string, content: string){
+    public crearPost(userId: string, title: string, content: string, status: string) {
         const pubDate = this.getDate();
 
-        const objLogin = { UserId: userId, Title: title, Content: content, PubDate: pubDate, status: 'Espera', rating: '5', blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"};
+        const objLogin = { UserId: userId, 
+          Title: title, 
+          Content: content, 
+          PubDate: pubDate, 
+          status: status,
+          rating: '5', 
+          blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"};
 
         console.log('Objeto de usuario a comentar: ', objLogin);
 
@@ -44,7 +54,7 @@ export class postService {
         return this.http.get(`${this.API}Posts/${postId}`);
     }
 
-    public actualizarPost(postId: string, title: string, content: string) {
+    public actualizarPost(postId: string, title: string, content: string, status: string) {
 
         // Obtener el UserId desde localStorage
         const userId = localStorage.getItem('userId') || '';
@@ -58,7 +68,7 @@ export class postService {
             title: title,
             content: content,
             pubDate: pubDate,
-            status: 'Espera',
+            status: status,
             id: postId,
             rating: '5',  
             blogId: "28CB2010-3F50-44CD-D3D9-08DCE58FD310"  
@@ -69,5 +79,27 @@ export class postService {
         // Realizar la solicitud HTTP PUT para actualizar el post
         return this.http.put(`${this.API}Posts/${postId}`, objLogin);
     }
+
+    generateContent(message: string): Observable<any> {
+        const url = `${this.baseUrl}/models/gemini-1.5-flash-latest:generateContent?key=${this.apiKey}`;
+        const data = {
+          "contents": [
+            {
+              "parts": [
+                {
+                  "text": message
+                }
+              ]
+            }
+          ]
+        };
+    
+        const headers = {
+          'Content-Type': 'application/json'
+        };
+    
+        return this.http.post(url, data, { headers });
+      }
+
 
 }

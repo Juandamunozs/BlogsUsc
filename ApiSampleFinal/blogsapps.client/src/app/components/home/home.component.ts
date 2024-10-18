@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
   nuevoComentario: string = '';
   postId_comentario: string = '';
 
+ infringe: number = 0;
+
   comentarios: any[] = [];
   forMe: any[] = [];
   usuarios: any[] = [];
@@ -412,8 +414,12 @@ deleteComentario(commentId: string): void {
         if (post.userId === user.userId) {
           // Verificar si hay un like para este post
           const like = this.likePost.find(like => 
-            like.postId === post.id // Aquí no compares con userId
+            like.postId === post.id 
           );
+
+          if(post.status == 'Infringir'){
+            this.infringe += 1;
+          }
     
           // Si existe un like, obtener su ID; si no, establecer como null
           const likeId = like ? like.id : null;

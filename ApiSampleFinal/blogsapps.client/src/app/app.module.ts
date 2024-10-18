@@ -9,6 +9,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule } from '@angular/forms'; 
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,7 +47,7 @@ import { CommentDialogComponent, viewLikeDialogComponent } from './assets/export
     MatToolbarModule, MatIconModule,
     MatCardModule, MatMenuModule,
     MatButtonModule, MatAutocompleteModule,
-    FormsModule
+    FormsModule,  MatBadgeModule
   ],
   providers: [
     provideAnimationsAsync()

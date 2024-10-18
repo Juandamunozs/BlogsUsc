@@ -20,6 +20,7 @@ export class PostDialogComponent implements OnInit {
   ) {
     console.log('Datos del dialog:', data);
     this.form = this.initializeForm(); 
+
   }
 
   ngOnInit() {
@@ -57,11 +58,66 @@ export class PostDialogComponent implements OnInit {
     );
   }
 
+  validarContenido() {
+    const message = `Por favor, analiza el siguiente texto y devuelve solo un booleano: 'true' si encuentras palabras obscenas o inapropiadas, y 'false' si no encuentras nada de eso. Texto: "${this.form.value.title} ${this.form.value.content}"`;
+  
+    this.postService.generateContent(message).subscribe(
+      (response: any) => {
+        console.log('Respuesta del servidor:', response);
+  
+        const generatedText = response.candidates[0].content.parts[0].text;
+  
+        console.log('Contenido generado:', generatedText);
+        
+        const matchTrue = /true/i.test(generatedText.trim());
+        const matchFalse = /false/i.test(generatedText.trim());
+  
+        if (matchTrue) {
+          console.log('Se encontraron palabras inapropiadas.');
+          this.guardarPostBaneado();
+        } else if (matchFalse) {
+          console.log('No se encontraron palabras inapropiadas.');
+          this.guardarPost();
+        } else {
+          console.error('Respuesta inesperada:', generatedText);
+        }
+      },
+      (error: any) => {
+        console.error('Error al validar el contenido:', error);
+        this.guardarPostBaneado();
+        alert('Ocurrió un error al validar el contenido.');
+      }
+    );
+  }
+  
+
   guardarPost() {
     if (this.form.valid) {
       const postAction = this.data. message === 'Crear Post'
-        ? this.postService.crearPost(this.userId, this.form.value.title, this.form.value.content)
-        : this.postService.actualizarPost(this.data. message, this.form.value.title, this.form.value.content);
+        ? this.postService.crearPost(this.userId, this.form.value.title, this.form.value.content, 'Espera')
+        : this.postService.actualizarPost(this.data. message, this.form.value.title, this.form.value.content, 'Espera');
+
+      postAction.subscribe(
+        (response: any) => {
+          console.log('Respuesta del servidor:', response);
+          this.dialogRef.close(response); 
+          window.location.reload();
+        },
+        (error: any) => {
+          console.error('Error al guardar el post:', error);
+          alert('Ocurrió un error al guardar la publicación.'); 
+        }
+      );
+    } else {
+      alert('Por favor, completa todos los campos correctamente.'); 
+    }
+  }
+  
+  guardarPostBaneado() {
+    if (this.form.valid) {
+      const postAction = this.data. message === 'Crear Post'
+        ? this.postService.crearPost(this.userId, this.form.value.title, this.form.value.content, 'Infringir')
+        : this.postService.actualizarPost(this.data. message, this.form.value.title, this.form.value.content, 'Infringir');
 
       postAction.subscribe(
         (response: any) => {

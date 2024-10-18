@@ -26,17 +26,51 @@
 
         <span class="example-spacer"></span>
 
-        <button mat-icon-button *ngIf="rol === ''" class="example-icon" (click)="Login()" aria-label="Login">
-          <mat-icon>login</mat-icon>
-        </button>
-
-        <button mat-icon-button *ngIf="rol !== ''" class="example-icon" (click)="revisarPerfil('me')"
-          aria-label="Profile">
-          <mat-icon>account_circle</mat-icon>
-        </button>
-        <button mat-icon-button *ngIf="rol !== ''" class="example-icon" (click)="Logout()" aria-label="Profile">
-          <mat-icon>exit_to_app</mat-icon>
-        </button>
+        <button
+        mat-icon-button
+        *ngIf="rol === ''"
+        class="custom-login-icon"
+        (click)="Login()"
+        aria-label="Login"
+        [ngStyle]="{ 'background-color': rol === '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
+      >
+        <mat-icon [ngStyle]="{ 'color': rol === '' ? '#00796b' : 'black' }">login</mat-icon>
+      </button>
+      
+      <button
+        mat-icon-button
+        *ngIf="rol !== ''"
+        class="custom-profile-icon"
+        (click)="revisarPerfil('me')"
+        aria-label="Profile"
+        [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
+      >
+        <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#00796b' : 'black' }">account_circle</mat-icon>
+      </button>
+      
+      <div class="demo-section" *ngIf="rol === 'Admin'">
+        <mat-icon
+          matBadge="{{ infringe }}"
+          matBadgeColor="warn"
+          class="custom-notifications-icon"
+          [ngStyle]="{ 'font-size': infringe > 0 ? '36px' : '24px', 'color': '#ff5722' }"
+        >
+          notifications
+        </mat-icon>
+        <span class="cdk-visually-hidden">Notificaciones</span>
+      </div>
+      
+      <button
+        mat-icon-button
+        *ngIf="rol !== ''"
+        class="custom-logout-icon"
+        (click)="Logout()"
+        aria-label="Logout"
+        [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
+      >
+        <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#c62828' : 'black' }">exit_to_app</mat-icon>
+      </button>
+      
 
         <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
           <mat-icon>menu</mat-icon>
@@ -123,7 +157,7 @@
         
           <!-- Botón para desbanear el post -->
           <button (click)="DesbanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)" 
-                  *ngIf="usuario.status == 'Rechazado'" 
+                  *ngIf="usuario.status == 'Rechazado' || usuario.status == 'Infringir'" 
                   mat-button
                   [ngClass]="{'unban-button': true}" 
                   [ngStyle]="{'background-color': 'green', 'color': 'white'}">

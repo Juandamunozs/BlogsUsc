@@ -391,4 +391,10 @@ button {
   transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse 
 } */
 
+.status[data-status="Infringir"] {
+  background-color: #f37221; /* Azul */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(237, 82, 4, 0.5); /* Sombra */
+}
+
 

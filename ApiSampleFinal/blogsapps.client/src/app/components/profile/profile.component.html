@@ -25,7 +25,8 @@
 
           <mat-form-field appearance="fill">
             <mat-label>Descripción</mat-label>
-            <textarea matInput id="descripcion" [(ngModel)]="usuarioPerfil.descripcion" name="descripcion" required></textarea>
+            <textarea matInput id="descripcion" [(ngModel)]="usuarioPerfil.descripcion" name="descripcion"
+              required></textarea>
           </mat-form-field>
 
           <button mat-raised-button color="primary" type="submit">Guardar Cambios</button>
@@ -60,7 +61,8 @@
 
 <!-- Posts del Usuario -->
 <div class="body" *ngFor="let post of postUsuarioRenderizar">
-  <mat-card class="example-card" *ngIf="(rol == 'Lector' && post.status == 'Aceptado') || (rol == 'Autor' && post.status == 'Aceptado') || (rol == 'Admin') || (userId == post.userId && post.status == 'Espera' && rol == 'Autor')">
+  <mat-card class="example-card"
+    *ngIf="(rol == 'Lector' && post.status == 'Aceptado') || (rol == 'Autor' && post.status == 'Aceptado') || (rol == 'Admin') || (userId == post.userId && post.status == 'Espera' && rol == 'Autor')">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{ post.user }}</mat-card-title>
@@ -82,8 +84,7 @@
         </div>
 
         <div class="dislike" *ngIf="post.liked == false">
-          <button (click)="like(post.id)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
-            mat-button>
+          <button (click)="like(post.id)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'" mat-button>
             <mat-icon class="like">favorite</mat-icon>
           </button>
         </div>
@@ -92,13 +93,16 @@
           <mat-icon class="comment">stars</mat-icon>
         </button>
 
-        <button (click)="comment(post.id)" *ngIf="rol === 'Admin' || (rol === 'Autor' && post.userId == permised)" mat-button>
+        <button (click)="comment(post.id)" *ngIf="rol === 'Admin' || (rol === 'Autor' && post.userId == permised)"
+          mat-button>
           <mat-icon class="comment">comment</mat-icon>
         </button>
-        <button (click)="editPost(post.id)" *ngIf="rol === 'Admin' || (post.userId == permised && rol == 'Autor')" mat-button>
+        <button (click)="editPost(post.id)" *ngIf="rol === 'Admin' || (post.userId == permised && rol == 'Autor')"
+          mat-button>
           <mat-icon class="share">edit</mat-icon>
         </button>
-        <button (click)="delete(post.id)" *ngIf="rol === 'Admin' || (post.userId == permised && permisedUser)" mat-button>
+        <button (click)="delete(post.id)" *ngIf="rol === 'Admin' || (post.userId == permised && permisedUser)"
+          mat-button>
           <mat-icon class="delete">delete</mat-icon>
         </button>
       </div>
@@ -108,31 +112,25 @@
 
       <!-- Botón para banear el post -->
       <button (click)="BanearPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)"
-              *ngIf="post.status == 'Aceptado'" 
-              mat-button
-              [ngClass]="{'ban-button': true}" 
-              [ngStyle]="{'background-color': 'orange', 'color': 'white'}">
+        *ngIf="post.status == 'Aceptado'" mat-button [ngClass]="{'ban-button': true}"
+        [ngStyle]="{'background-color': 'orange', 'color': 'white'}">
         Banear post
       </button>
-    
+
       <!-- Botón para desbanear el post -->
-      <button (click)="DesbanearPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)" 
-              *ngIf="post.status == 'Rechazado'" 
-              mat-button
-              [ngClass]="{'unban-button': true}" 
-              [ngStyle]="{'background-color': 'green', 'color': 'white'}">
+      <button (click)="DesbanearPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)"
+        *ngIf="post.status == 'Rechazado' || post.status == 'Infringir'" mat-button [ngClass]="{'unban-button': true}"
+        [ngStyle]="{'background-color': 'green', 'color': 'white'}">
         Desbanear post
       </button>
-    
+
       <!-- Botón para aceptar el post -->
-      <button (click)="AceptarPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)" 
-              *ngIf="post.status == 'Espera'" 
-              mat-button
-              [ngClass]="{'accept-button': true}" 
-              [ngStyle]="{'background-color': '#007bff', 'color': 'white'}">
+      <button (click)="AceptarPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)"
+        *ngIf="post.status == 'Espera'" mat-button [ngClass]="{'accept-button': true}"
+        [ngStyle]="{'background-color': '#007bff', 'color': 'white'}">
         Aceptar post
       </button>
-    
+
     </mat-card-actions>
 
     <!-- Sección de Comentarios -->
@@ -148,7 +146,9 @@
             <button (click)="deleteComentario(comentario.id)" mat-button>
               <mat-icon class="delete">delete</mat-icon>
             </button>
-            <button (click)="commentEdit(comentario.content, comentario.id, post.postId, comentario.pubDate, usuarioPerfil.userId)" mat-button>
+            <button
+              (click)="commentEdit(comentario.content, comentario.id, post.postId, comentario.pubDate, usuarioPerfil.userId)"
+              mat-button>
               <mat-icon class="edit">edit</mat-icon>
             </button>
           </div>
