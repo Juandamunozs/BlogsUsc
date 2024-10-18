@@ -52,6 +52,14 @@ namespace BlogsApps.Server.Repositories
 
         public async Task DeletePostAsync(Guid id)
         {
+            // Primero, eliminar los registros en LikedPosts que referencian a este post
+            var likedPosts = await _context.LikedPosts.Where(lp => lp.PostId == id).ToListAsync();
+            if (likedPosts.Any())
+            {
+                _context.LikedPosts.RemoveRange(likedPosts);
+            }
+
+            // Luego, buscar y eliminar el post
             var post = await _context.Posts.FindAsync(id);
             if (post != null)
             {

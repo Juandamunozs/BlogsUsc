@@ -77,9 +77,18 @@ namespace BlogsApps.Server.Controllers
                 return NotFound();
             }
 
-            await _postRepository.DeletePostAsync(id);
-            return NoContent();
+            try
+            {
+                await _postRepository.DeletePostAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // Puedes registrar el error aquí si es necesario
+                return StatusCode(500, "Error al eliminar el post: " + ex.Message);
+            }
         }
+
 
         [HttpPut("{id}/status")]
         public async Task<IActionResult> UpdatePostStatus(Guid id, [FromBody] PostDTO postDTO)

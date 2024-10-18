@@ -7,14 +7,10 @@
       "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\web\\models\\postmodels\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:models\\postmodels\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\domain\\domain\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -27,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 169,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,24 +40,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 246,
-          "SelectedChildIndex": 3,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PostDTO.cs",
-              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\PostModels\\PostDTO.cs",
-              "RelativeDocumentMoniker": "Models\\PostModels\\PostDTO.cs",
-              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Models\\PostModels\\PostDTO.cs",
-              "RelativeToolTip": "Models\\PostModels\\PostDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs*",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs*",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwEQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:34:56.286Z",
+              "WhenOpened": "2024-10-18T02:14:54.257Z",
               "EditorCaption": ""
             },
             {
@@ -72,22 +62,9 @@
               "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
               "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
               "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:27:08.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvywAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:26:29.516Z",
+              "WhenOpened": "2024-10-18T02:14:31.469Z",
               "EditorCaption": ""
             },
             {
@@ -98,22 +75,22 @@
               "RelativeDocumentMoniker": "Controllers\\PostsController.cs",
               "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs*",
               "RelativeToolTip": "Controllers\\PostsController.cs*",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAowG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:19:52.605Z",
+              "WhenOpened": "2024-10-18T02:13:51.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Post.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Domain\\Post.cs",
               "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Domain\\Domain\\Post.cs",
               "RelativeToolTip": "..\\Domain\\Domain\\Post.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T00:16:30.778Z",
+              "WhenOpened": "2024-10-18T02:13:41.298Z",
               "EditorCaption": ""
             }
           ]
