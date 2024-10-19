@@ -1,24 +1,24 @@
-<h2 mat-dialog-title *ngIf="data.message">Actualizar Usuario</h2>
-<h2 mat-dialog-title *ngIf="!data.message">Crear Usuario</h2>
+<div class="container">
+  <h2 mat-dialog-title *ngIf="data.message">Actualizar Usuario</h2>
+  <h2 mat-dialog-title *ngIf="!data.message">Crear Usuario</h2>
 
-<form [formGroup]="form" (ngSubmit)="guardarUsuario()">
-  <mat-form-field appearance="fill">
-    <mat-label>Nombre</mat-label>
-    <input matInput formControlName="name" required>
-    <mat-error *ngIf="form.get('name')?.hasError('required')">El nombre es requerido.</mat-error>
-  </mat-form-field>
+  <form [formGroup]="form" (ngSubmit)="guardarUsuario()">
+      <mat-form-field appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="name" required>
+          <mat-error *ngIf="form.get('name')?.hasError('required')">El nombre es requerido.</mat-error>
+      </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Correo Electrónico</mat-label>
-    <input matInput formControlName="email" required>
-    <mat-error *ngIf="form.get('email')?.hasError('required')">El correo es requerido.</mat-error>
-    <mat-error *ngIf="form.get('email')?.hasError('email')">Debe ser un correo válido.</mat-error>
-  </mat-form-field>
+      <mat-form-field appearance="fill">
+          <mat-label>Correo Electrónico</mat-label>
+          <input matInput formControlName="email" required>
+          <mat-error *ngIf="form.get('email')?.hasError('required')">El correo es requerido.</mat-error>
+          <mat-error *ngIf="form.get('email')?.hasError('email')">Debe ser un correo válido.</mat-error>
+      </mat-form-field>
 
-  <!-- Agrega más campos según sea necesario -->
-
-  <div mat-dialog-actions>
-    <button mat-button type="submit" color="primary">Guardar</button>
-    <button mat-button (click)="cerrar()">Cancelar</button>
-  </div>
-</form>
+      <div mat-dialog-actions>
+          <button mat-button type="submit" color="primary">Guardar</button>
+          <button mat-button (click)="cerrar()">Cancelar</button>
+      </div>
+  </form>
+</div>

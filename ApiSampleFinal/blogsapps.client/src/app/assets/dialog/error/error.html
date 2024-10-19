@@ -1,0 +1,16 @@
+<!-- Diálogo para las operaciones que fueron incorrectas -->
+<div class="container">
+    <h1 class="titulo" mat-dialog-title>Error</h1>
+    <div mat-dialog-content>
+      <p>Debido a que infringió las reglas al {{ data.message  }} ha sido reportado al admin y no publicado.</p>
+    </div>
+  
+    <div class="button" mat-dialog-actions>
+      <div class="button-container">
+        <button mat-fab class="custom-button" aria-label="Cerrar" (click)="cerrar()">
+          <mat-icon>error</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  

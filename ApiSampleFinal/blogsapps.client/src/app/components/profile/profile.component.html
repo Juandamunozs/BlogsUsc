@@ -75,7 +75,7 @@
       <h6 class="status" [attr.data-status]="post.status">{{ post.status }}</h6>
     </mat-card-content>
     <mat-card-actions>
-      <div class="reacciones">
+      <div class="reacciones" *ngIf="post.status == 'Aceptado' || rol === 'Admin'">
         <div class="like" *ngIf="post.liked == true">
           <button (click)="dislike(post.likeId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
             mat-button [ngStyle]="{'background-color': 'white', 'color': 'red'}">
@@ -119,7 +119,7 @@
 
       <!-- Botón para desbanear el post -->
       <button (click)="DesbanearPost(post.id, post.title, post.content, post.userId, post.rating, post.blogId)"
-        *ngIf="post.status == 'Rechazado' || post.status == 'Infringir'" mat-button [ngClass]="{'unban-button': true}"
+        *ngIf="post.status == 'Rechazado' || post.status == 'Infringir' || post.status == 'Baneado'" mat-button [ngClass]="{'unban-button': true}"
         [ngStyle]="{'background-color': 'green', 'color': 'white'}">
         Desbanear post
       </button>

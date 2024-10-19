@@ -1,8 +1,9 @@
 import { Component, Inject, OnInit } from "@angular/core";
-import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from "@angular/material/dialog";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { postService } from "../../dialog/post/post_create.service";
 import { HomeService } from "../../../components/home/home.service";
+import { ErrorDialogComponent } from "../error/error";
 
 @Component({
   selector: 'app-comment-dialog',
@@ -15,11 +16,15 @@ export class CommentDialogComponent implements OnInit {
   postId: string = '';
   commentId: string = '';
 
+  generatedText: string = '';
+
   constructor(
     private fb: FormBuilder,
+    private postService: postService,
     private homeService: HomeService,
+    public dialog: MatDialog,
     public dialogRef: MatDialogRef<CommentDialogComponent>, 
-    @Inject(MAT_DIALOG_DATA) public message: any  // Cambié 'data' por 'message'
+    @Inject(MAT_DIALOG_DATA) public message: any  
   ) {
     console.log('Datos del comentario:', message);
 
@@ -53,6 +58,62 @@ export class CommentDialogComponent implements OnInit {
     });
   }
 
+  ErrorDialogComponent(message: any): void {
+    this.dialog.open(ErrorDialogComponent, {
+      data: { message: message },
+      disableClose: true
+    });
+  }
+
+  validarContenido() {
+    try {
+      const message = `Por favor, analiza el siguiente texto y devuelve solo un booleano: 'true' si encuentras palabras obscenas o inapropiadas, y 'false' si no encuentras nada de eso. Texto: "${this.form.value.content}"`;
+  
+      this.postService.generateContent(message).subscribe(
+        (response: any) => {
+          console.log('Respuesta del servidor:', response);
+
+
+          try {
+            this.generatedText = response.candidates[0].content.parts[0].text;
+          }catch (error) {
+
+            console.error('Error al obtener el contenido generado:', error);
+            this.ErrorDialogComponent('crear comentario');
+            return;
+
+          }
+  
+          console.log('Contenido generado:', this.generatedText);
+  
+          const matchTrue = /true/i.test(this.generatedText.trim());
+          const matchFalse = /false/i.test(this.generatedText.trim());
+  
+          if (matchTrue) {
+            console.log('Se encontraron palabras inapropiadas.');
+            this.ErrorDialogComponent('crear comentario');
+          } else if (matchFalse) {
+            console.log('No se encontraron palabras inapropiadas.');
+            this.guardarPost();
+          } else {
+            console.error('Respuesta inesperada:', this.generatedText);
+            this.ErrorDialogComponent('crear comentario');
+          }
+        },
+        (error: any) => {
+          console.error('Error al validar el contenido:', error);
+          this.ErrorDialogComponent('crear comentario');
+          alert('Ocurrió un error al validar el contenido.');
+        }
+      );
+    } catch (error) {
+      console.error('Error inesperado:', error);
+      this.ErrorDialogComponent('crear comentario');
+      alert('Ocurrió un error inesperado durante la validación del contenido.');
+    }
+  }
+  
+
   guardarPost() {
     
     if (this.form.valid) {
@@ -64,7 +125,6 @@ export class CommentDialogComponent implements OnInit {
         (response: any) => {
           console.log('Respuesta del servidor:', response);
           this.dialogRef.close(response); 
-          window.location.reload();
         },
         (error: any) => {
           console.error('Error al guardar el post:', error);

@@ -1,0 +1,57 @@
+.container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Fondo blanco para un aspecto limpio */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Ancho máximo para limitar el tamaño */
+  margin: 20px auto; /* Centrando el diálogo en la página */
+  border: 1px solid #e0e0e0; /* Borde sutil */
+}
+
+.titulo {
+  color: #d32f2f; /* Rojo más oscuro para un impacto visual */
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold; /* Negrita para el título */
+}
+
+p {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #555; /* Color de texto gris oscuro para mejor legibilidad */
+  line-height: 1.6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.custom-button {
+  background-color: #007bff; /* Azul corporativo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px; /* Espaciado más amplio */
+  font-size: 16px;
+  font-weight: 500; /* Peso de fuente más claro */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex; /* Alineando el icono */
+  align-items: center; /* Centrando el icono verticalmente */
+}
+
+.custom-button mat-icon {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+  transform: translateY(-2px);
+}
+
+.custom-button:active {
+  transform: translateY(0);
+}

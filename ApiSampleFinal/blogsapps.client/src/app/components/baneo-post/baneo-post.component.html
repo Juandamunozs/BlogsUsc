@@ -8,8 +8,6 @@
             src="https://scontent.fclo8-1.fna.fbcdn.net/v/t39.30808-6/457474868_122094825464514277_6337982021611361056_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7yxk68vUgkAQ7kNvgGOgijQ&_nc_ht=scontent.fclo8-1.fna&oh=00_AYCbHyzd-0uEZuAX_wM4XbjSxxsmssrnq993c7bcVcfczg&oe=66D93C35"
             alt="Logo">
         </div>
-
-        
         <span class="example-spacer"></span>
         <!-- Formulario de búsqueda -->
         <form class="example-form" *ngIf="rol === 'Admin' || rol ==='Autor' || rol === 'Lector'">
@@ -28,82 +26,46 @@
 
         <span class="example-spacer"></span>
 
-        <button
-        mat-icon-button
-        *ngIf="rol === ''"
-        class="custom-login-icon"
-        (click)="Login()"
-        aria-label="Login" matTooltip="Iniciar sesión"
-        [ngStyle]="{ 'background-color': rol === '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
-      >
-        <mat-icon [ngStyle]="{ 'color': rol === '' ? '#00796b' : 'black' }">login</mat-icon>
-      </button>
-      <button
-      mat-icon-button
-      *ngIf="rol !== ''"
-      class="custom-profile-icon-admin"
-      (click)="PanelAdmin()"
-      aria-label="Profile"  matTooltip="Administración"
-      [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
-    >
-      <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#00796b' : 'black' }"> admin_panel_settings</mat-icon>
-    </button>
-      <button
-        mat-icon-button
-        *ngIf="rol !== ''"
-        class="custom-profile-icon"
-        (click)="revisarPerfil('me')"
-        aria-label="Profile"  matTooltip="Revisar perfil"
-        [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
-      >
-        <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#00796b' : 'black' }">account_circle</mat-icon>
-      </button>
-      
-      <div class="demo-section" *ngIf="rol === 'Admin'" (click)="postBaneo()">
-        <mat-icon
-          matBadge="{{ infringe }}"
-          matBadgeColor="warn"
-          class="custom-notifications-icon" matTooltip="Post baneados"
-          [ngStyle]="{ 'font-size': infringe > 0 ? '36px' : '24px', 'color': '#ff5722' }"
-        >
-          notifications
-        </mat-icon>
-        <span class="cdk-visually-hidden">Notificaciones</span>
-      </div>
-      
-      <button
-        mat-icon-button
-        *ngIf="rol !== ''"
-        class="custom-logout-icon"
-        (click)="Logout()"
-        aria-label="Logout" matTooltip="Cerrar sesión"
-        [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }"
-      >
-        <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#c62828' : 'black' }">exit_to_app</mat-icon>
-      </button>
-      
+        <button mat-icon-button *ngIf="rol === ''" class="custom-login-icon" (click)="Login()" aria-label="Login"
+          matTooltip="Iniciar sesión"
+          [ngStyle]="{ 'background-color': rol === '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }">
+          <mat-icon [ngStyle]="{ 'color': rol === '' ? '#00796b' : 'black' }">login</mat-icon>
+        </button>
+
+        <button mat-icon-button *ngIf="rol !== ''" class="custom-profile-icon" (click)="revisarPerfil('me')"
+          aria-label="Profile" matTooltip="Revisar perfil"
+          [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }">
+          <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#00796b' : 'black' }">account_circle</mat-icon>
+        </button>
+
+        <div class="demo-section" *ngIf="rol === 'Admin'" (click)="postBaneo()">
+          <mat-icon matBadge="{{ infringe }}" matBadgeColor="warn" class="custom-notifications-icon"
+            matTooltip="Post baneados" [ngStyle]="{ 'font-size': infringe > 0 ? '36px' : '24px', 'color': '#ff5722' }">
+            notifications
+          </mat-icon>
+          <span class="cdk-visually-hidden">Notificaciones</span>
+        </div>
+
+        <button mat-icon-button *ngIf="rol !== ''" class="custom-logout-icon" (click)="Logout()" aria-label="Logout"
+          matTooltip="Cerrar sesión"
+          [ngStyle]="{ 'background-color': rol !== '' ? '#e0f7fa' : 'transparent', 'border-radius': '5px' }">
+          <mat-icon [ngStyle]="{ 'color': rol !== '' ? '#c62828' : 'black' }">exit_to_app</mat-icon>
+        </button>
+
 
         <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-        </button> -->
+            <mat-icon>menu</mat-icon>
+          </button> -->
       </mat-toolbar>
     </p>
   </div>
 
   <!-- Publicar post -->
 
-  <div class="create-post-container" *ngIf="rol === 'Admin' || rol ==='Autor'">
-    <div class="post-options">
-      <button class="option-button" (click)="crearPost()">
-        Crear Publicación
-      </button>
-    </div>
-  </div>
-
-
   <!-- Publicar post -->
   <div class="body" *ngFor="let usuario of forMe">
-    <mat-card class="example-card"  *ngIf="(rol == 'Lector' && usuario.status == 'Aceptado') || (rol == 'Autor' && usuario.status == 'Aceptado') || (rol == 'Admin') || (userId == usuario.userId && usuario.status == 'Espera' && rol == 'Autor')">
+    <mat-card class="example-card"
+      *ngIf="(rol == 'Lector' && usuario.status == 'Aceptado') || (rol == 'Autor' && usuario.status == 'Aceptado') || (rol == 'Admin') || (userId == usuario.userId && usuario.status == 'Espera' && rol == 'Autor')">
       <div class="revisarPerfil" (click)="revisarPerfil(usuario.userId)">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
@@ -120,7 +82,8 @@
         <h6 class="status" [attr.data-status]="usuario.status">{{ usuario.status }}</h6>
 
         <mat-card-actions>
-          <div class="reacciones" style="display: flex; align-items: center;"  *ngIf="usuario.status == 'Aceptado' || rol === 'Admin'">
+          <div class="reacciones" style="display: flex; align-items: center;"
+            *ngIf="usuario.status == 'Aceptado' || rol === 'Admin'">
             <div class="like" *ngIf="usuario.liked == true">
               <button (click)="dislike(usuario.likeId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
                 mat-button matTooltip="No me gusta" [ngStyle]="{'background-color': 'white', 'color': 'red'}">
@@ -130,7 +93,7 @@
 
             <div class="dislike" *ngIf="usuario.liked == false">
               <button (click)="like(usuario.postId)" *ngIf="rol === 'Admin' || rol === 'Autor' || rol === 'Lector'"
-                mat-button> 
+                mat-button>
                 <mat-icon matTooltip="Me gusta" class="like">favorite</mat-icon>
               </button>
             </div>
@@ -149,7 +112,7 @@
             </button>
 
             <button (click)="delete(usuario.postId)" *ngIf="rol == 'Admin' || (usuario.userId == permised && logueado)"
-              mat-button> 
+              mat-button>
               <mat-icon matTooltip="Borrar post" class="delete">delete</mat-icon>
             </button>
           </div>
@@ -158,34 +121,31 @@
         <mat-card-actions *ngIf="rol == 'Admin'" class="actions-container">
 
           <!-- Botón para banear el post -->
-          <button (click)="BanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)"
-                  *ngIf="usuario.status == 'Aceptado'" 
-                  mat-button
-                  [ngClass]="{'ban-button': true}" 
-                  [ngStyle]="{'background-color': 'orange', 'color': 'white'}">
+          <button
+            (click)="BanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)"
+            *ngIf="usuario.status == 'Aceptado'" mat-button [ngClass]="{'ban-button': true}"
+            [ngStyle]="{'background-color': 'orange', 'color': 'white'}">
             Banear post
           </button>
-        
+
           <!-- Botón para desbanear el post -->
-          <button (click)="DesbanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)" 
-                  *ngIf="usuario.status == 'Rechazado' || usuario.status == 'Infringir' || usuario.status == 'Baneado'" 
-                  mat-button
-                  [ngClass]="{'unban-button': true}" 
-                  [ngStyle]="{'background-color': 'green', 'color': 'white'}">
+          <button
+            (click)="DesbanearPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)"
+            *ngIf="usuario.status == 'Rechazado' || usuario.status == 'Infringir' || usuario.status == 'Baneado'"
+            mat-button [ngClass]="{'unban-button': true}" [ngStyle]="{'background-color': 'green', 'color': 'white'}">
             Desbanear post
           </button>
-        
+
           <!-- Botón para aceptar el post -->
-          <button (click)="AceptarPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)" 
-                  *ngIf="usuario.status == 'Espera'" 
-                  mat-button
-                  [ngClass]="{'accept-button': true}" 
-                  [ngStyle]="{'background-color': '#007bff', 'color': 'white'}">
+          <button
+            (click)="AceptarPost(usuario.postId, usuario.title, usuario.descripcion, usuario.userId, usuario.rating, usuario.blogId)"
+            *ngIf="usuario.status == 'Espera'" mat-button [ngClass]="{'accept-button': true}"
+            [ngStyle]="{'background-color': '#007bff', 'color': 'white'}">
             Aceptar post
           </button>
-        
+
         </mat-card-actions>
-        
+
 
       </mat-card-content>
 
@@ -219,15 +179,15 @@
       <!-- Formulario para añadir un nuevo comentario -->
       <form class="comment-form" *ngIf="comentarPostFlag && comentario && postId_comentario == usuario.postId">
         <!-- <div class="comentario">
-          <mat-form-field class="ComentarioInput" appearance="fill">
-            <mat-label>Comentario</mat-label>
-            <textarea matInput [(ngModel)]="nuevoComentario" name="comentario" placeholder="Tu comentario"></textarea>
-          </mat-form-field>
-        </div>
-        <div class="guardarComentario">
-          <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Publicar
-            comentario</button>
-        </div> -->
+            <mat-form-field class="ComentarioInput" appearance="fill">
+              <mat-label>Comentario</mat-label>
+              <textarea matInput [(ngModel)]="nuevoComentario" name="comentario" placeholder="Tu comentario"></textarea>
+            </mat-form-field>
+          </div>
+          <div class="guardarComentario">
+            <button (click)="guardarComentario()" mat-raised-button color="primary" type="submit">Publicar
+              comentario</button>
+          </div> -->
       </form>
     </mat-card>
   </div>

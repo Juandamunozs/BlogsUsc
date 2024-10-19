@@ -1,7 +1,8 @@
 import { Component, Inject, OnInit } from "@angular/core";
-import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from "@angular/material/dialog";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { postService } from "../../dialog/post/post_create.service";
+import { ErrorDialogComponent } from "../error/error";
 
 @Component({
   selector: 'app-post-dialog',
@@ -12,8 +13,11 @@ export class PostDialogComponent implements OnInit {
   form: FormGroup; 
   userId: string = '';
 
+  generatedText: string = '';
+
   constructor(
     private fb: FormBuilder,
+    public dialog: MatDialog,
     private postService: postService,
     public dialogRef: MatDialogRef<PostDialogComponent>, 
     @Inject(MAT_DIALOG_DATA) public data: { message: string }
@@ -59,35 +63,60 @@ export class PostDialogComponent implements OnInit {
   }
 
   validarContenido() {
-    const message = `Por favor, analiza el siguiente texto y devuelve solo un booleano: 'true' si encuentras palabras obscenas o inapropiadas, y 'false' si no encuentras nada de eso. Texto: "${this.form.value.title} ${this.form.value.content}"`;
+    try {
+      const message = `Por favor, analiza el siguiente texto y devuelve solo un booleano: 'true' si encuentras palabras obscenas o inapropiadas, y 'false' si no encuentras nada de eso. Texto: "${this.form.value.title} ${this.form.value.content}"`;
   
-    this.postService.generateContent(message).subscribe(
-      (response: any) => {
-        console.log('Respuesta del servidor:', response);
+      this.postService.generateContent(message).subscribe(
+        (response: any) => {
+          console.log('Respuesta del servidor:', response);
   
-        const generatedText = response.candidates[0].content.parts[0].text;
+          try {
+            this.generatedText = response.candidates[0].content.parts[0].text;
+          }catch (error) {
+
+            console.error('Error al obtener el contenido generado:', error);
+            this.ErrorDialogComponent('crear post');
+            return;
+
+          }
   
-        console.log('Contenido generado:', generatedText);
-        
-        const matchTrue = /true/i.test(generatedText.trim());
-        const matchFalse = /false/i.test(generatedText.trim());
+          console.log('Contenido generado:', this.generatedText);
   
-        if (matchTrue) {
-          console.log('Se encontraron palabras inapropiadas.');
+          const matchTrue = /true/i.test(this.generatedText.trim());
+          const matchFalse = /false/i.test(this.generatedText.trim());
+  
+          if (matchTrue) {
+            console.log('Se encontraron palabras inapropiadas.');
+            this.ErrorDialogComponent('crear post')
+            this.guardarPostBaneado();
+          } else if (matchFalse) {
+            console.log('No se encontraron palabras inapropiadas.');
+            this.guardarPost();
+          } else {
+            console.error('Respuesta inesperada:', this.generatedText);
+            this.ErrorDialogComponent('crear post')
+            this.guardarPostBaneado(); 
+          }
+        },
+        (error: any) => {
+          console.error('Error al validar el contenido:', error);
           this.guardarPostBaneado();
-        } else if (matchFalse) {
-          console.log('No se encontraron palabras inapropiadas.');
-          this.guardarPost();
-        } else {
-          console.error('Respuesta inesperada:', generatedText);
+          this.ErrorDialogComponent('crear post')
         }
-      },
-      (error: any) => {
-        console.error('Error al validar el contenido:', error);
-        this.guardarPostBaneado();
-        alert('Ocurrió un error al validar el contenido.');
-      }
-    );
+      );
+    } catch (error) {
+      console.error('Error inesperado:', error);
+      this.guardarPostBaneado();
+      this.ErrorDialogComponent('crear post')
+    }
+  }
+  
+
+  ErrorDialogComponent(message: any): void {
+    this.dialog.open(ErrorDialogComponent, {
+      data: { message: message },
+      disableClose: true
+    });
   }
   
 
@@ -122,8 +151,8 @@ export class PostDialogComponent implements OnInit {
       postAction.subscribe(
         (response: any) => {
           console.log('Respuesta del servidor:', response);
-          this.dialogRef.close(response); 
-          window.location.reload();
+          this.ErrorDialogComponent('crear post')
+          this.cerrar()
         },
         (error: any) => {
           console.error('Error al guardar el post:', error);

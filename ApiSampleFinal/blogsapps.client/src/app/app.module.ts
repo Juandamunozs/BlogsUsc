@@ -24,7 +24,12 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PostDialogComponent } from './assets/dialog/post/post_create';
 import { UserDialogComponent } from './assets/dialog/user/user_create';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
-import { CommentDialogComponent, viewLikeDialogComponent } from './assets/export_dialog';
+import { CommentDialogComponent, ErrorDialogComponent, viewLikeDialogComponent } from './assets/export_dialog';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { BaneoPostComponent } from './components/baneo-post/baneo-post.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,12 @@ import { CommentDialogComponent, viewLikeDialogComponent } from './assets/export
     UserDialogComponent,
     MaintenanceComponent,
     viewLikeDialogComponent,
-    CommentDialogComponent
+    CommentDialogComponent,
+    ErrorDialogComponent,
+    HeaderComponent,
+    FooterComponent,
+    AdminPanelComponent,
+    BaneoPostComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
@@ -47,7 +57,7 @@ import { CommentDialogComponent, viewLikeDialogComponent } from './assets/export
     MatToolbarModule, MatIconModule,
     MatCardModule, MatMenuModule,
     MatButtonModule, MatAutocompleteModule,
-    FormsModule,  MatBadgeModule
+    FormsModule,  MatBadgeModule,  MatTooltipModule
   ],
   providers: [
     provideAnimationsAsync()

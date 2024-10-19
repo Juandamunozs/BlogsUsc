@@ -1,14 +1,77 @@
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  border: 2px solid #007bff;
+}
+
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  mat-form-field {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    margin: 10px;
-  }
-  
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+mat-label {
+  color: #007bff;
+  font-weight: 500;
+}
+
+mat-input-element {
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+mat-input-element:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+mat-error {
+  color: #f44336;
+  font-size: 12px;
+}
+
+button {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:not([type="submit"]) {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button:not([type="submit"]):hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+div[mat-dialog-actions] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

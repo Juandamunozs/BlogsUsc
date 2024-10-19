@@ -3,14 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\web\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FC50B32-1F74-45DE-A941-B0197428E5D4}|..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\infrastructure\\infrastructure\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\web\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CADA793-F270-4039-BB23-09D4B4DC137A}|ApiSampleFinal.csproj|solutionrelative:controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2197E95-DE1F-4345-8CD8-83C11C29009E}|..\\Domain\\Domain\\Domain.csproj|c:\\users\\juand\\onedrive\\desktop\\desarrollo\\blogsusc\\apisamplefinal\\domain\\domain\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -23,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 169,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,20 +43,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PostRepository.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
               "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs*",
-              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwEQAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T02:14:54.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IPostRepository.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
               "RelativeDocumentMoniker": "..\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
@@ -64,21 +64,19 @@
               "RelativeToolTip": "..\\Infrastructure\\Infrastructure\\Repositories\\IPostRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T02:14:31.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T02:14:31.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PostsController.cs",
               "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PostsController.cs",
-              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs*",
-              "RelativeToolTip": "Controllers\\PostsController.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Desktop\\Desarrollo\\BlogsUsc\\ApiSampleFinal\\Web\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "Controllers\\PostsController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T02:13:51.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T02:13:51.403Z"
             },
             {
               "$type": "Document",
@@ -90,8 +88,7 @@
               "RelativeToolTip": "..\\Domain\\Domain\\Post.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T02:13:41.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T02:13:41.298Z"
             }
           ]
         }
