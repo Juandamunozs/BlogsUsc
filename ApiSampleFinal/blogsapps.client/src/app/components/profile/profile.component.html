@@ -8,7 +8,7 @@
 <!-- perfil-usuario.component.html -->
 <div class="perfil-container" *ngIf="usuarioPerfil">
   <div class="perfil-header">
-    <img [src]="usuarioPerfil.imageUrl" alt="{{ usuarioPerfil.user }}" class="perfil-imagen">
+    <div mat-card-avatar class="example-header-image"></div>
     <div class="perfil-info">
       <!-- Modo edición -->
       <div *ngIf="editMode; else viewMode">
@@ -42,6 +42,7 @@
           <p class="perfil-bio">{{ usuarioPerfil.descripcion }}</p>
           <div class="perfil-actions">
             <button mat-raised-button color="primary" (click)="edit()">Editar Perfil</button>
+            <button mat-raised-button color="primary" (click)="eliminarUser()">Eliminar perfil</button>
           </div>
         </div>
       </ng-template>

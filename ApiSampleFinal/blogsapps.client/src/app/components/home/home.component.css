@@ -8,10 +8,11 @@
 }
 
 .body {
-  background-color: #c88A5F;
+  background-image: url('https://img.freepik.com/fotos-premium/foto-lineas-formas-neon-sobre-fondo-oscuro_822108-4505.jpg'); 
+  background-size: cover; 
+  background-position: center; 
   justify-content: center;
   align-items: center;
-
 }
 
 .footer {
@@ -41,8 +42,8 @@
 }
 
 mat-card-content {
-  align-items: start;
-  justify-items: start;
+  align-items: center;
+  justify-items: center;
 
 }
 
@@ -234,6 +235,8 @@ mat-form-field {
 
 .publicacion {
   text-align: end;
+  align-items: end;
+  margin-left: 60%;
 }
 
 .ComentarioInpu{

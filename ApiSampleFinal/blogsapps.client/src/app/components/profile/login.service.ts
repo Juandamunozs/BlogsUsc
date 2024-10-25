@@ -36,4 +36,9 @@ export class UsuarioService {
         return this.http.get<any>(`${this.API}Users/${username}`);
     }
 
+    public deleteUser(userId: string) {
+        // Enviar la solicitud DELETE
+        return this.http.delete<any>(`${this.API}Users/${userId}`);
+    }
+
 }

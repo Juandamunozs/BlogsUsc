@@ -107,7 +107,7 @@ export class PostDialogComponent implements OnInit {
     } catch (error) {
       console.error('Error inesperado:', error);
       this.guardarPostBaneado();
-      this.ErrorDialogComponent('crear post')
+      // this.ErrorDialogComponent('crear post')
     }
   }
   

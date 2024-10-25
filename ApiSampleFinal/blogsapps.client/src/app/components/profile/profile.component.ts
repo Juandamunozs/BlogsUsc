@@ -6,7 +6,7 @@ import { LoginService } from '../login/login.service';
 import { MatDialog } from '@angular/material/dialog';
 import { UserDialogComponent } from '../../assets/dialog/user/user_create';
 import { PostDialogComponent } from '../../assets/dialog/post/post_create';
-import { CommentDialogComponent, viewLikeDialogComponent } from '../../assets/export_dialog';
+import { CommentDialogComponent, ErrorDialogComponent, viewLikeDialogComponent } from '../../assets/export_dialog';
 
 @Component({
   selector: 'app-profile',
@@ -512,6 +512,28 @@ DesbanearPost(id: string, title: string, content: string, userId: string, rating
       console.error('Error al desbanear el post:', error);
     }
   );
+}
+
+eliminarUser():void {
+  console.log('Vamos a eliminar el usuario con id:', this.username);
+  this.usuarioService.deleteUser(this.username).subscribe(
+    (Response: any) => {
+      console.log('Respuesta del servidor:', Response);
+      this.router.navigate(['/Home']);
+    },
+    (error) => {
+      console.error('Error al eliminar el usuario:', error);
+      // this.ErrorDialogComponent('eliminar usuario');
+      
+    }
+  );
+}
+
+ErrorDialogComponent(message: any): void {
+  this.dialog.open(ErrorDialogComponent, {
+    data: { message: message },
+    disableClose: true
+  });
 }
 
 BanearPost(id: string, title: string, content: string, userId: string, rating: string, blogId: string): void {

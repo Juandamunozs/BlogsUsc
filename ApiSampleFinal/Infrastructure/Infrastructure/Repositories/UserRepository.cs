@@ -38,15 +38,57 @@ namespace BlogsApps.Server.Repositories
             await _context.SaveChangesAsync();  // Guardar cambios
         }
 
-        public async Task DeleteUserAsync(Guid id)
+        public async Task DeleteUserAsync(Guid userId)
         {
-            var user = await _context.Users.FindAsync(id);  // Buscar usuario
-            if (user != null)  // Sin validación adicional
+            // Eliminar primero los posts creados por el usuario
+            var userPosts = await _context.Posts.Where(p => p.UserId == userId).ToListAsync();
+            if (userPosts.Any())
             {
-                _context.Users.Remove(user);  // Eliminar usuario
-                await _context.SaveChangesAsync();  // Guardar cambios
+                // Eliminar las entidades relacionadas a cada post del usuario
+                foreach (var post in userPosts)
+                {
+                    // Eliminar registros en LikedPosts que referencian al post del usuario
+                    var likedPosts = await _context.LikedPosts.Where(lp => lp.PostId == post.Id).ToListAsync();
+                    if (likedPosts.Any())
+                    {
+                        _context.LikedPosts.RemoveRange(likedPosts);
+                    }
+
+                    // Eliminar los comentarios asociados al post
+                    var comments = await _context.Coments.Where(c => c.PostId == post.Id).ToListAsync();
+                    if (comments.Any())
+                    {
+                        _context.Coments.RemoveRange(comments);
+                    }
+
+                    // Eliminar el post
+                    _context.Posts.Remove(post);
+                }
+            }
+
+            // Eliminar los likes del usuario en otros posts
+            var userLikedPosts = await _context.LikedPosts.Where(lp => lp.UserId == userId).ToListAsync();
+            if (userLikedPosts.Any())
+            {
+                _context.LikedPosts.RemoveRange(userLikedPosts);
+            }
+
+            // Eliminar los comentarios del usuario
+            var userComments = await _context.Coments.Where(c => c.UserId == userId).ToListAsync();
+            if (userComments.Any())
+            {
+                _context.Coments.RemoveRange(userComments);
+            }
+
+            // Finalmente, buscar y eliminar el usuario
+            var user = await _context.Users.FindAsync(userId);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
             }
         }
+
 
         public async Task<bool> UserExistsAsync(Guid id)
         {

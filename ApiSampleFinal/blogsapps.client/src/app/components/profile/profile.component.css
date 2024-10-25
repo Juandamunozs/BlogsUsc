@@ -93,10 +93,11 @@
 }
 
 .body {
-
+  background-image: url('https://img.freepik.com/fotos-premium/foto-lineas-formas-neon-sobre-fondo-oscuro_822108-4505.jpg'); 
+  background-size: cover; 
+  background-position: center; 
   justify-content: center;
   align-items: center;
-
 }
 
 .example-card {
@@ -349,13 +350,18 @@ button {
 }
 
 .status {
-  padding: 10px 15px;
+  padding: 10px 15px; 
   border-radius: 5px;
   text-align: center; /* Centra el texto */
   font-weight: bold; /* Texto en negrita */
   font-size: 1.1em; /* Aumenta el tamaño del texto */
   text-transform: uppercase; /* Convierte el texto a mayúsculas */
   transition: background-color 0.3s ease, transform 0.2s; /* Añade una transición suave */
+  width: 30%; /* Ancho del contenedor */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
 }
 
 /* Estilo para el estado Aceptado */

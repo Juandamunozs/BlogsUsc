@@ -18,11 +18,21 @@ export class LoginCreateComponent {
     this.form = this.blog.group({
       email: ['', [Validators.required, Validators.email]],
       name: ['', [Validators.required]],
-      contraseña: ['', [Validators.required, Validators.minLength(6)]],
-      confirmarContraseña: ['', [Validators.required, Validators.minLength(6),]],
+      contraseña: ['', [
+        Validators.required, 
+        Validators.minLength(10),
+        Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).*') 
+      ]],
+      confirmarContraseña: ['', [
+        Validators.required, 
+        Validators.minLength(10),
+        Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).*') 
+      ]],
       role: ['Lector']
     });
   }
+
+  //mínimo 10 caracteres, al menos una letra mayúscula, una letra minúscula, un número y un carácter especial
 
   ngOnInit(): void {
 
